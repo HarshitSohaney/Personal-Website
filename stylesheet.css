@@ -1,7 +1,8 @@
- /* Remove the navbar's default margin-bottom and rounded borders */ 
+
  /* Style the navbar */
  #navbar {
   overflow: hidden;
+  z-index: 1;
   background-color: #333;
 }
 
@@ -9,7 +10,7 @@
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #080505;
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -28,78 +29,84 @@
   padding-top: 60px;
 } 
   
-  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-  .row.content {height: 450px}
-  
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 10px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 5px;
+  z-index: 2;
+}
+
+.sidenav a {
+  padding: 20px 2px 6px 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+#body {
+  z-index: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  position: fixed;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
   .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 10px;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .main {
-    margin-left: 160px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  
-  /* Set black background color, white text and some padding */
-  footer {
-    background-color: #555;
-    color: white;
+    height: auto;
     padding: 15px;
-    position: fixed;
   }
-  
-  /* On small screens, set height to 'auto' for sidenav and grid */
-  @media screen and (max-width: 767px) {
-    .sidenav {
-      height: auto;
-      padding: 15px;
-    }
-    .row.content {height:auto;} 
-  }
+  .row.content {height:auto;} 
+}
 
-  .spotifyplayer {
-    height: 100%;
-    width: 260px;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    overflow-x: hidden;
-    padding: 0;
-    padding-top: 10px;
-    background-color: #333;
-  }
+.spotifyplayer {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  overflow-x: hidden;
+  padding: 0;
+  padding-top: 10px;
+  background-color: #333;
+  z-index: 2;
+}
 
-  .search {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
+.search {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
