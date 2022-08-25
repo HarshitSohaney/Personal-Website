@@ -16,29 +16,32 @@
   text-decoration: none;
 }
 
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
+.navbar-fixed {
   top: 0;
+  z-index: 1;
+  position: fixed;
   width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-} 
-  
+.search {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 450px}
 
+/* Side nav */
 .sidenav {
   height: 100%;
   width: 160px;
   position: fixed;
   top: 0px;
   left: 0;
-  right: 10px;
   background-color: #111;
   overflow-x: hidden;
   padding-top: 5px;
@@ -102,11 +105,7 @@ footer {
   z-index: 2;
 }
 
-.search {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+#banner {
+  padding-top: 30 px;
+  height: 273px;
 }
