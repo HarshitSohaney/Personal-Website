@@ -73,23 +73,12 @@
   margin-left: 160px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-}
-
-#body {
   z-index: 0;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px;
-  position: fixed;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -112,9 +101,4 @@ footer {
   padding-top: 10px;
   background-color: #333;
   z-index: 2;
-}
-
-#banner {
-  padding-top: 30 px;
-  height: 273px;
 }
