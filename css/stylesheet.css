@@ -1,39 +1,49 @@
-
- /* Style the navbar */
- #navbar {
-  overflow: hidden;
-  z-index: 1;
-  background-color: #333;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  color: white;
+  left: 0;
+  background-color: rgb(45, 45, 45);
 }
 
-/* Navbar links */
-#navbar a {
-  float: left;
+.sidebar a {
+  padding: 8px;
+  color: whitesmoke;
+  font-size: 15px;
   display: block;
-  color: #080505;
-  text-align: center;
-  padding: 14px;
   text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+  cursor: pointer;
+  opacity: .7;
+  }
+
+.sidebar .basic-info {
+  padding-top: 20px;
+  height: 200px;
+}
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  left: 150px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .navbar-fixed {
   top: 0;
-  z-index: 1;
+  margin-right: 260px;
   position: fixed;
-  width: 100%;
 }
-
-.search {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
+.row.content {height: 500px}
 
 /* Side nav */
 .sidenav {
@@ -49,11 +59,10 @@
 }
 
 .sidenav a {
-  padding: 20px 2px 6px 5px;
+  padding: 100px 2px 6px 5px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
   color: #818181;
-  display: block;
 }
 
 .sidenav a:hover {
