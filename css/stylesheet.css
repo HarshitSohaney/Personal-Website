@@ -102,3 +102,39 @@
   background-color: #333;
   z-index: 2;
 }
+.container {
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 0.7fr 1.8fr 0.6fr; 
+  grid-template-rows: 1fr 1.6fr 0.4fr; 
+  gap: 0px 0px; 
+}
+.Navbar {
+  display: grid; 
+  grid-template-columns: 1fr 0.9fr 1.2fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Links Links Links"
+    "Nav Nav Nav"
+    "Nav Nav Nav"
+    "Nav Nav Nav"; 
+  grid-area: 1 / 1 / 4 / 2; 
+}
+.Links { grid-area: Links; }
+.Nav { grid-area: Nav; }
+.body { grid-area: 1 / 2 / 3 / 4; }
+.footer {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    "Information progress-bar spotify-button"
+    ". . ."; 
+  grid-area: 3 / 1 / 4 / 4; 
+}
+.progress-bar { grid-area: progress-bar; }
+.Information { grid-area: Information; }
+.spotify-button { grid-area: spotify-button; }
