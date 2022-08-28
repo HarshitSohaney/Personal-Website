@@ -131,10 +131,10 @@
   gap: 0px 0px; 
   grid-template-areas: 
     ". . ."
-    "Information progress-bar spotify-button"
+    "Information progressbar spotify-button"
     ". . ."; 
   grid-area: 3 / 1 / 4 / 4; 
 }
-.progress-bar { grid-area: progress-bar; }
+.progressbar { grid-area: progressbar; }
 .Information { grid-area: Information; }
 .spotify-button { grid-area: spotify-button; }
