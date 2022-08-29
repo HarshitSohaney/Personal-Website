@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .sidebar {
   height: 100%;
-  width: 150px;
+  width: 163px;
   position: fixed;
   top: 0;
   color: white;
@@ -33,7 +33,7 @@
   z-index: 1;
   background-color: rgb(36, 36, 36);
   width: 100%;
-  left: 150px;
+  left: 163px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -126,5 +126,5 @@
 .Nav { grid-area: Nav; }
 .main-content { 
   grid-area: 1 / 2 / 3 / 4;
-  margin-right: 10px;
+  height: 2000px;
  }
