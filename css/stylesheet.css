@@ -43,7 +43,7 @@
   position: fixed;
 }
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 500px}
+.content {height: 500px}
 
 /* Side nav */
 .sidenav {
@@ -123,9 +123,12 @@
 }
 .Links { grid-area: Links; }
 .Nav { grid-area: Nav; }
-.body { grid-area: 1 / 2 / 3 / 4; }
+.main-content { 
+  grid-area: 1 / 2 / 3 / 4;
+ }
 .footer {
   display: grid; 
+  left: 0;
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
   gap: 0px 0px; 
