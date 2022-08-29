@@ -71,7 +71,7 @@
 }
 
 .main {
-  margin-left: 160px; /* Same width as the sidebar + left position in px */
+ /* margin-left: 160px;  Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   z-index: 0;
@@ -106,7 +106,7 @@
 .container-grid {
   display: grid; 
   grid-auto-rows: 1fr; 
-  grid-template-columns: 0.7fr 1.8fr 0.6fr; 
+  grid-template-columns: 0.4fr 2.1fr 0.6fr; 
   grid-template-rows: 1fr 1.6fr 0.4fr; 
   gap: 0px 0px; 
 }
@@ -126,4 +126,5 @@
 .Nav { grid-area: Nav; }
 .main-content { 
   grid-area: 1 / 2 / 3 / 4;
+  margin-right: 10px;
  }
