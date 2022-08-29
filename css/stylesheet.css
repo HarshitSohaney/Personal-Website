@@ -7,6 +7,7 @@
   color: white;
   left: 0;
   background-color: rgb(45, 45, 45);
+  padding: 10px;
 }
 
 .sidebar a {
@@ -102,7 +103,7 @@
   background-color: #333;
   z-index: 2;
 }
-.container {
+.container-grid {
   display: grid; 
   grid-auto-rows: 1fr; 
   grid-template-columns: 0.7fr 1.8fr 0.6fr; 
@@ -126,18 +127,3 @@
 .main-content { 
   grid-area: 1 / 2 / 3 / 4;
  }
-.footer {
-  display: grid; 
-  left: 0;
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". . ."
-    "Information progressbar spotify-button"
-    ". . ."; 
-  grid-area: 3 / 1 / 4 / 4; 
-}
-.progressbar { grid-area: progressbar; }
-.Information { grid-area: Information; }
-.spotify-button { grid-area: spotify-button; }

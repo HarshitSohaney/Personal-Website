@@ -6,7 +6,30 @@
     height: 70px;
     width: 100%;
   }
-
+.footer {
+  display: grid; 
+  left: 0;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "name player-buttons ."
+    "footer-info progressbar right-info-footer"
+    ". . ."; 
+  grid-area: 3 / 1 / 4 / 4; 
+}
+.progressbar { 
+  grid-area: progressbar;
+}
+.player-buttons { 
+  grid-area: player-buttons;
+ }
+.name { grid-area: name; }
+.footer-info { 
+  grid-area: footer-info;
+  padding: 25px;
+ }
+.right-info-footer { grid-area: right-info-footer; }
 /* The progress container (grey background) */
 .progress-container {
     width: 30%;
@@ -15,9 +38,9 @@
     background: #ccc;
   }
   
-  /* The progress bar (scroll indicator) */
-  .progress-bar {
-    height: 2px;
-    background: #04AA6D;
-    width: 0%;
-  }
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 2px;
+  background: #04AA6D;
+  width: 0%;
+}

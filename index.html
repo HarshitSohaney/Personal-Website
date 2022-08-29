@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel ="stylesheet" href="css/searchStyle.css">
   <link rel ="stylesheet" href="css/stylesheet.css">
   <link rel ="stylesheet" href="css/heroSection.css">
@@ -14,13 +14,17 @@
   
 </head>
 <body>
-
-  <div class="container">
-    <div class="Navbar sidebar">
-      <h3 style="font-size: small;">Harshit Sohaney</h3>
+  <div class="container-grid">
+    <div class="Navbar sidebar text-center">
       <div class="Links">
-        <p> Hi, UofT</p>
-        <p> Links</p>
+        <a rel="noopener" href="https://www.linkedin.com/in/harshitsohaney/" target="_blank">
+          <img alt="LinkedIn" src="icons/in.png"
+          width="40" height="40">
+        </a>
+        <a rel="noopener" href="https://github.com/HarshitSohaney" target="_blank">
+          <img alt="Github" src="icons/Github.png"
+          width="40" height="40">
+        </a>
         <p> Links</p>
       </div>
 
@@ -36,8 +40,7 @@
         
     </div>
     <div class="main-content">
-      <!-- hero section -->
-      <section class="section about-section gray-bg" id="about">
+      <section class="section hero-intro about-section gray-bg" id="about">
         <div class="">
             <div class="row align-items-center flex-row-reverse">
               <div class="col-lg-6">
@@ -113,16 +116,29 @@
         </div>
       </div>
         
-      <div class="Information">
+      <div class="name">
         <p> Harshit Sohaney</p>
       </div>
-
-      <div class="player-buttons"></div>
-      <div class="spotify-button"></div>
+      <div class="footer-info">
+        <p> pictureee</p>
+      </div>
+      <div class="player-buttons">
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+              Variable
+            </div>
+            <div class="col">
+              3 of 3
+            </div>
+          </div>
+      </div>
+      <div class="right-info-footer"></div>
     </div>
   </div>
-  
- 
 
 </body>
 <script src="JS/navbar.js"></script>
