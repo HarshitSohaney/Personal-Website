@@ -4,7 +4,7 @@
   <title>Harshit Sohaney</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="jquery-3.6.0.min.js"></script>
@@ -14,6 +14,7 @@
   <link rel ="stylesheet" href="css/heroSection.css">
   <link rel ="stylesheet" href="css/footerPlayer.css">
   <link rel ="stylesheet" href="css/stylesheet.css">
+  <link rel ="stylesheet" href="css/experiencesSection.css">
   
 </head>
 <body>
@@ -92,7 +93,14 @@
       </div> 
       <div class="content">
         <section class="song-selection">
-          <p> Before you look over my details, try out the embedded music player by searching for a song below or click on shuffle to listen to the Recuriter Playlist! </p>
+          <br><br><br>
+          <br><br><br>
+          <br><br><br>
+          <p> Before you look over my details, try out the embedded music player by searching for a song in the header search bar or click on shuffle to listen to the Recuriter Playlist! </p>
+          <br><br><br>
+          <input type="image" name="Shuffle" id="Shuffle" src="icons/shuffle.png" alt="text" width="30" height="30">
+          <br><br><br>
+          <br><br><br>
         </section>
         
         <section class="about-me-section">
@@ -121,7 +129,37 @@
 
         </section>
         <section class="experiences-section">
-
+          <button class="accordion">
+            <div class="container">
+              <div class="row">
+                <div class="col-1">
+                  <p> picture </p>
+                </div>
+                <div class="col-6">
+                  <p>role</p>
+                </div>
+                <div class="col-3">
+                  <p>company</p>
+                </div>
+                <div class="col-2">
+                  <p>years spent</p>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+          
+          <button class="accordion">Section 2</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+          
+          <button class="accordion">Section 3</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div> 
         </section>
         <section class="projects-section">
 
@@ -186,5 +224,6 @@
 </body>
 <script src="JS/navbar.js"></script>
 <script src="JS/footer.js"></script>
+<script src="JS/buttons.js"></script>
 
 </html>
