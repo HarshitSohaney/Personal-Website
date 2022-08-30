@@ -7,6 +7,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="jquery-3.6.0.min.js"></script>
   <script src="JS/includes.js"></script>
   <link rel ="stylesheet" href="css/searchStyle.css">
@@ -129,37 +130,148 @@
 
         </section>
         <section class="experiences-section">
-          <button class="accordion">
-            <div class="container">
-              <div class="row">
-                <div class="col-1">
-                  <p> picture </p>
+          
+          <div class="accordion">
+            <h4>Past experience</h4> 
+            <div id="myAccordion">
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="headingOne">
+                    <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-1">
+                            <img src="Pictures/softchoice.png" height="40px" width="40px" alt="softchoice">
+                          </div>
+                          <div class="col-4">
+                            <p>Application Development Co-op</p>
+                          </div>
+                          <div class="col-4 text-muted">
+                            <p>Softchoice</p>
+                          </div>
+                          <div class="col-3 text-muted">
+                            <p>May, 2022 - Aug, 2022</p>
+                          </div>
+                        </div>
+                      </div>
+                    </button>									
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a rel="noopener" href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                    </div>
                 </div>
-                <div class="col-6">
-                  <p>role</p>
+              </div>
+              <div class="accordion-item bg-dark">
+                  <h2 class="accordion-header" id="headingTwo">
+                      <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-1">
+                              <img src="Pictures/UTAT.png" alt="UTAT" height="40px" width="40px">
+                            </div>
+                            <div class="col-4">
+                              <p>Firmware & Optics Team Member</p>
+                            </div>
+                            <div class="col-4 text-muted">
+                              <p>University of Toronto Aerospace Team</p>
+                            </div>
+                            <div class="col-3 text-muted">
+                              <p>Sept, 2020 - Present</p>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item bg-dark">
+                  <h2 class="accordion-header" id="headingThree">
+                      <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-1">
+                              <img src="Pictures/UOFT.png" alt="Uoft" width="40px" height="40px"> 
+                            </div>
+                            <div class="col-4">
+                              <p> Various Roles </p>
+                            </div>
+                            <div class="col-4 text-secondary">
+                              <p>University of Toronto Engineering</p>
+                            </div>
+                            <div class="col-3 text-secondary">
+                              <p>Sept, 2020 - Present</p>
+                            </div>
+                          </div>
+                        </div>
+                      </button>                     
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="headingFour">
+                    <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-1">
+                            <img src="Pictures/UOFTAI.jpg" alt="Uoft" width="40px" height="40px"> 
+                          </div>
+                          <div class="col-4">
+                            <p> Curriculum Content Lead </p>
+                          </div>
+                          <div class="col-4 text-secondary">
+                            <p> UofT AI</p>
+                          </div>
+                          <div class="col-3 text-muted">
+                            <p>June, 2022 - Present</p>
+                          </div>
+                        </div>
+                      </div>
+                    </button>                     
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                    </div>
                 </div>
-                <div class="col-3">
-                  <p>company</p>
-                </div>
-                <div class="col-2">
-                  <p>years spent</p>
+              </div>
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="headingFive">
+                    <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-1">
+                            <img src="Pictures/ICUBE.jpg" alt="Uoft" width="40px" height="40px"> 
+                          </div>
+                          <div class="col-4">
+                            <p> Co-Creator </p>
+                          </div>
+                          <div class="col-4 text-secondary">
+                            <p> Air-Recharging </p>
+                          </div>
+                          <div class="col-3 text-secondary">
+                            <p>Mar, 2021 - Nov, 2021</p>
+                          </div>
+                        </div>
+                      </div>
+                    </button>                     
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                    </div>
                 </div>
               </div>
             </div>
-          </button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
           </div>
-          
-          <button class="accordion">Section 2</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div>
-          
-          <button class="accordion">Section 3</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div> 
+        </div>
         </section>
         <section class="projects-section">
 
@@ -170,6 +282,7 @@
         <section class="spotify-section">
 
         </section>
+        
       </div>
     </div>
     <div class="footer footerStyle">
