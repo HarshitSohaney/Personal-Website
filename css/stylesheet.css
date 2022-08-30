@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova');
+
 .container-grid {
   font-family: 'Montserrat', sans-serif;
   font-size:20px;
@@ -13,7 +15,6 @@
   background-color: rgb(0,0,0);
   padding: 10px;
 }
-
 .sidebar a {
   padding: 8px;
   color: whitesmoke;
@@ -96,6 +97,12 @@
   }
   .row.content {height:auto;} 
 }
+
+h4 {
+  font-weight: 700;
+  font-family: proxima nova;
+  font-size: larger;
+}
 .container-grid {
   display: grid; 
   grid-auto-rows: 1fr; 
@@ -119,5 +126,6 @@
 .Nav { grid-area: Nav; }
 .main-content { 
   grid-area: 1 / 2 / 3 / 4;
-  height: 2000px;
+  height: 4000px;
+  z-index: 0;
  }
