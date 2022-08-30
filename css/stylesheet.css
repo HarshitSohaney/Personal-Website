@@ -102,6 +102,7 @@ h4 {
   font-weight: 700;
   font-family: proxima nova;
   font-size: larger;
+  color: white;
 }
 .container-grid {
   display: grid; 
