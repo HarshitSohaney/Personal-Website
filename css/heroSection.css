@@ -22,18 +22,26 @@
 /* About Me 
 ---------------------*/
 .about-text h1 {
-  font-size: 90px;
-  font-weight: 700;
-  margin: 90px 0 20px;
+  font-size: 80px;
+  font-weight: 1000;
+  margin: 10px 0 20px;
+}
+
+.about-text h3 {
+  margin-top: 40px;
+  font-weight: 1000;
+  font-size: 12px;
 }
 @media (max-width: 767px) {
 .about-text h3 {
   font-size: 35px;
+  font-weight: 1000;
 }
 }
 .about-text h6 {
-font-weight: 600;
-margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 10px;
 }
 @media (max-width: 767px) {
 .about-text h6 {
@@ -50,7 +58,8 @@ color: #20247b;
 }
 
 .about-list {
-padding-top: 10px;
+  padding-top: 10px;
+  font-size: 10px;
 }
 .about-list .media {
   padding: 10px 0px 30px 0px;
@@ -81,8 +90,8 @@ margin: auto;
 opacity: 0.5;
 }
 .about-list p {
-margin: 0;
-font-size: 15px;
+  margin: 0;
+  font-size: 13px;
 }
 
 @media (max-width: 991px) {
