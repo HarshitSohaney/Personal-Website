@@ -1,6 +1,6 @@
 #search {
     justify-content: center;
-    background: #444;
+    background: #383838;
     border: 0 none;
     font: bold 25px Montserrat;
     width: 100%;
@@ -9,7 +9,7 @@
 
 
 #search input[type="text"] {
-    background: rgb(0, 0, 0);
+    background: #1d1d1d;
     border: none;
     color: #fff;
     width: 100%;

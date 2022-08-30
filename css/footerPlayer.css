@@ -24,9 +24,8 @@
  }
 .footer-info { 
   grid-area: footer-info;
-  padding: 25px;
+  padding: 10px;
   color: #fff;
-  font-size: 15px;
  }
 .footer-right { grid-area: footer-right; }
 .footer-player { 
@@ -51,4 +50,9 @@
 
 .audio-buttons {
   margin-top: 7px;
+}
+
+.album-name {
+  font-size: 15px;
+  margin-top: 8px;
 }
