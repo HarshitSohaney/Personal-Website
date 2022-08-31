@@ -2,6 +2,10 @@
     background-color: #191414;
     padding: 20px;
 }
+.container-aboutme {
+    min-height: 425px;
+    max-width: 825px;
+}
 
 .aboutSection {
     background-image: url('../Pictures/aboutImg.jpg');
@@ -16,8 +20,8 @@
 }
 
 .aboutSection:hover {
-    min-height: 425px;
-    max-width: 825px;
+    min-height: 420px;
+    max-width: 820px;
 }
 
 .text-alignment h5{
@@ -26,4 +30,8 @@
 }
 .text-alignment p {
     font-size: smaller;
+}
+
+.img-style-education {
+    border-radius: 6px;
 }
