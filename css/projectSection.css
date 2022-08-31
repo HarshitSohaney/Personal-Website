@@ -1,0 +1,19 @@
+.project-padding {
+    padding: 40px;
+    background-color: #191414;
+    transition: 0.4s;
+}
+.col-style-project {
+    width: 100%;
+    text-align: left;
+    background-color: grey;
+    color: white;
+}
+.img-container {
+    width:100%;
+    padding: 0;
+}
+
+.col-img-project img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
