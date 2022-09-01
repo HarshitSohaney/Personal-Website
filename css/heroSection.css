@@ -39,17 +39,32 @@
     font-weight: 1000;
     text-align: center;
   }
+  .about-text h6 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .about-avatar {
+    margin-top: 30px;
+    border-radius: 50%;
+    align-items: center;
+  }
+  .hero-img {
+    max-width: 90%;
+  }
+  .about-text {
+    font-size:40px;
+    text-align: center;
+  }
+  .about-list {
+    text-align: center;
+  }
 }
 .about-text h6 {
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 10px;
-}
-@media (max-width: 767px) {
-  .about-text h6 {
-    font-size: 18px;
-    text-align: center;
-  }
 }
 .about-text p {
   font-size: 18px;
@@ -73,19 +88,7 @@ color: #20247b;
   font-size: 13px;
 }
 
-@media (max-width: 991px) {
-  .about-avatar {
-    margin-top: 30px;
-    border-radius: 50%;
-  }
-  .about-text {
-    font-size:40px;
-    text-align: center;
-  }
-  .about-list {
-    text-align: center;
-  }
-}
+
 .theme-color {
   color: #fc5356;
 }

@@ -1,7 +1,7 @@
  /* Style the buttons that are used to open and close the accordion panel */
  .accordion-header {
   height: 60px;
-  line-height: 30px; /* <-- this is what you must define */
+  line-height: 20px;
  }
  .accordion {
     background-color: #191414;
@@ -14,6 +14,15 @@
     outline: none;
     transition: 0.4s;
   }
+@media screen and (max-width: 750px) {
+  .accordion{
+    font-size: 20px;
+  }
+  .accordion-header {
+    height: 100px;
+    line-height: 20px;
+  }
+}
   .accordion-item {
     background-color: #191414;
   }
