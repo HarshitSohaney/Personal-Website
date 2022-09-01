@@ -3,7 +3,18 @@ $(document).ready(function(){
         $(this).attr("src", "icons/shuffle-green.png");
     });
 });
-
+function hover_next(element) {
+    element.setAttribute("src","icons/next.png");
+}
+function hover_prev(element) {
+    element.setAttribute("src","icons/previous.png");
+}
+function unhover_next(element) {
+    element.setAttribute("src","icons/next-grey.png");
+}
+function unhover_prev(element) {
+    element.setAttribute("src","icons/previous-grey.png");
+}
 // Next and previous buttons
 
 function isInViewport(el) {
@@ -43,13 +54,10 @@ function checkView() {
     
     for(let i = 0; i < sectionArray.length; i++) {
         const box = document.getElementById(sectionArray[i]);
-        const messageText = isInViewport(box) ?
-            'The' + sectionArray[i] + 'is visible in the viewport' :
-            '';
+
         if(isInViewport(box)) {
             
             if(i>0 || i<sectionArray.length -1) {
-                console.log('setting new prev and next' + sectionArray[i-1] + " " + sectionArray[i+1]);
                 return i;
             }
             

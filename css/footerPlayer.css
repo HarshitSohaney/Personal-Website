@@ -25,8 +25,9 @@
  }
 .footer-info { 
   grid-area: footer-info;
-  padding-top: 5px;
+  padding: 5px;
   color: #fff;
+  white-space: nowrap;
  }
 .footer-right { grid-area: footer-right; }
 .footer-player { 
@@ -59,8 +60,9 @@
 .audio-buttons:active {
   transform: translateY(1px);
 }
-.album-info {
-  vertical-align: middle;
+.album-info p{
+  font-size: 13px;
+  display: inline-block;
 }
 .album-text-secondary {
   font-size: 8px;
