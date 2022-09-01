@@ -37,6 +37,7 @@
   .about-text h3 {
     font-size: 35px;
     font-weight: 1000;
+    text-align: center;
   }
 }
 .about-text h6 {
@@ -47,6 +48,7 @@
 @media (max-width: 767px) {
   .about-text h6 {
     font-size: 18px;
+    text-align: center;
   }
 }
 .about-text p {
@@ -78,6 +80,10 @@ color: #20247b;
   }
   .about-text {
     font-size:40px;
+    text-align: center;
+  }
+  .about-list {
+    text-align: center;
   }
 }
 .theme-color {
