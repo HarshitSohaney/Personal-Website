@@ -100,6 +100,19 @@
   .row.content {height:auto;} 
 }
 
+@media screen and (max-width: 550px) {
+  .footer-info {
+    display:none;
+  }
+  .Nav {
+    display: fixed;
+  }
+  .container-grid{
+    width: 900px;
+  }
+
+}
+
 h4 {
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;

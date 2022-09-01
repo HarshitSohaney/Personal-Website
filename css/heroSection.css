@@ -4,7 +4,7 @@
 }
 .gray-bg {
   background: rgb(29,29,29);
-background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(119,119,119,1) 63%, rgba(144,144,144,1) 100%);
+  background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(119,119,119,1) 63%, rgba(144,144,144,1) 100%);
 }
 .hero-img {
   max-width: 80%;
@@ -25,7 +25,7 @@ background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(119,119,119,1) 63%, 
   font-size: 80px;
   font-weight: 600;
   margin: 10px 0 30px;
-  font-family: montserrat;
+  font-family: 'Montserrat';
 }
 
 .about-text h3 {
@@ -34,10 +34,10 @@ background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(119,119,119,1) 63%, 
   font-size: 12px;
 }
 @media (max-width: 767px) {
-.about-text h3 {
-  font-size: 35px;
-  font-weight: 1000;
-}
+  .about-text h3 {
+    font-size: 35px;
+    font-weight: 1000;
+  }
 }
 .about-text h6 {
   font-weight: 600;
@@ -45,9 +45,9 @@ background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(119,119,119,1) 63%, 
   font-size: 10px;
 }
 @media (max-width: 767px) {
-.about-text h6 {
-  font-size: 18px;
-}
+  .about-text h6 {
+    font-size: 18px;
+  }
 }
 .about-text p {
   font-size: 18px;
@@ -72,22 +72,17 @@ color: #20247b;
 }
 
 @media (max-width: 991px) {
-.about-avatar {
-  margin-top: 30px;
-  border-radius: 50%;
-}
+  .about-avatar {
+    margin-top: 30px;
+    border-radius: 50%;
+  }
+  .about-text {
+    font-size:40px;
+  }
 }
 .theme-color {
   color: #fc5356;
 }
 .dark-color {
   color: #ffffff;
-}
-
-.dot {
-  height: 5px;
-  width: 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
 }
