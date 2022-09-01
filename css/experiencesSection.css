@@ -14,8 +14,11 @@
     outline: none;
     transition: 0.4s;
   }
+  .accordion-item {
+    background-color: #191414;
+  }
   .background-black {
-    background-color: black;
+    background-color: #191414;
     color: white;
     transition: 0.6s;
   }
