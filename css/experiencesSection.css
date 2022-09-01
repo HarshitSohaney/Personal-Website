@@ -23,6 +23,18 @@
     line-height: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .accordion{
+    font-size: 10px;
+  }
+  .accordion-header {
+    height: 100px;
+    line-height: 20px;
+  }
+  .accordian-button {
+    font-size: 10px;
+  }
+}
   .accordion-item {
     background-color: #191414;
   }
