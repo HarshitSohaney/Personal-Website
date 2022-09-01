@@ -4,7 +4,7 @@
 }
 .gray-bg {
   background: rgb(29,29,29);
-  background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(119,119,119,1) 58%, rgba(255,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(119,119,119,1) 63%, rgba(144,144,144,1) 100%);
 }
 .hero-img {
   max-width: 80%;

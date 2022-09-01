@@ -19,6 +19,7 @@
   padding: 8px;
   color: whitesmoke;
   font-size: 15px;
+  font-weight: 600;
   display: block;
   text-decoration: none;
   }
@@ -113,6 +114,7 @@ h4 {
 }
 .Navbar {
   display: grid; 
+   padding: 10px;
   grid-template-columns: 1fr 0.9fr 1.2fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr; 
   gap: 0px 0px; 
@@ -123,7 +125,14 @@ h4 {
     "Nav Nav Nav"; 
   grid-area: 1 / 1 / 4 / 2; 
 }
-.Links { grid-area: Links; }
+.Links { 
+  grid-area: Links;
+  white-space: nowrap;
+ 
+ }
+ .Links p{
+  display: inline-block;
+ }
 .Nav { grid-area: Nav; }
 .main-content { 
   grid-area: 1 / 2 / 3 / 4;

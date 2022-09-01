@@ -24,33 +24,45 @@
 <body>
   <div class="container-grid">
     <div class="Navbar sidebar">
-      <div class="Links text-center">
+      <div class="Links">
         <a rel="noopener" href="https://www.linkedin.com/in/harshitsohaney/" target="_blank">
           <img alt="LinkedIn" src="icons/in.png"
-          width="40" height="40">
+          width="30" height="30">
+          <p> Linkedin</p> 
         </a>
         <a rel="noopener" href="https://github.com/HarshitSohaney" target="_blank">
           <img alt="Github" src="icons/Github.png"
-          width="40" height="40">
+          width="30" height="30">
+          <p> Github</p>
         </a>
-        <p> Links</p>
+        <a rel="noopener" href="mailto: harshit.sohaney@gmail.com">
+          <img alt="Spotify" src="icons/email.png"
+          width="30" height="30">
+          <p> Email</p>
+        </a>
+        <a rel="noopener" href="https://open.spotify.com/user/wlhpeecxx1mfjrvd7bwnr5i5c" target="_blank">
+          <img alt="Spotify" src="icons/spotify.png"
+          width="30" height="30">
+          <p> Spotify</p>
+        </a>
+        <br>
+        <br>
+        <br>
       </div>
-
       <div class="Nav">
-        <hr class="solid ">
+        <hr class="solid">
         <nav>
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#about">About me</a>
-          
           </nav>
       </div>
 
         
     </div>
     <div class="main-content">
-      <section class="section hero-intro about-section gray-bg">
+      <section class="section hero-intro about-section gray-bg hero-section" id="hero">
         <div class="container-fluid">
             <div class="row align-items-center flex-row-reverse">
               
@@ -260,7 +272,11 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                     <div class="card-body">
-                        <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a rel="noopener" href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                      <ul>
+                        <li>Designed the frontend and backend (full stack) for Single Page Applications (SPA) on the company portal using .NET Core and MVC Framework</li>
+                        <li>Optimized Keystone API logging tables with Object Relational Mapping (ORM) using LINQ to SQL queries to improve access time from 30 seconds to 2 seconds</li>
+                        <li>Implemented a dynamic sub-grid view to assist in determining development time and creating development tasks</li>
+                      </ul> 
                     </div>
                 </div>
               </div>
@@ -287,7 +303,34 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                       <div class="card-body">
-                          <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                        <table class="table table-borderless table-dark">
+                          <tr>
+                            <th> Firmware & Optics Payload </th>
+                            <th> Sept, 2021 - Present</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <ul>
+                                <li> Wrote a part of the SmallSat Paper which was published and presented at a SmallSat conference</li>
+                                <li> Configuring SD Card data transfer using an STM32H743 Developer Board and an Arduino Uno. Debugging the FatFs file system to manually transfer and receive data from the optical system</li>
+                                <li> Analyzed datasheets for voltage translator units and researching into bi-directional data paths between the SD card and microcontroller</li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th> Optics Payload </th>
+                            <th> Sept, 2020 - Sept, 2021</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <ul>
+                                <li> Experimented modeling the push-broom optical system of the payload using Code-V</li>
+                                <li>Researched extensively into hyper-spectral imaging and LEO light conditions to establish parameters for the FINCH Eye camera</li>
+                                
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>
                       </div>
                   </div>
               </div>
@@ -303,7 +346,7 @@
                               <p> Various Roles </p>
                             </div>
                             <div class="col-4 text-secondary">
-                              <p>University of Toronto Engineering</p>
+                              <p>University of Toronto</p>
                             </div>
                             <div class="col-3 text-secondary">
                               <p>Sept, 2020 - Present</p>
@@ -314,7 +357,33 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                       <div class="card-body">
-                          <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                          <table class="table table-borderless table-dark">
+                            <tr>
+                              <th> Electrical & Computer Engineering Club </th>
+                              <th> Events Director</th>
+                              <th> August 2022 - Present</th>
+                            </tr>
+                            <tr>
+                              <th> UofTHacks IX & X </th>
+                              <th> Sponsorship & Logistics Executive</th>
+                              <th> Sept, 2021 - Present</th>
+                            </tr>
+                            <tr>
+                              <th> University of Toronto Digital Society </th>
+                              <th> Events Director</th>
+                              <th> Sept, 2021 - Present</th>
+                            </tr>
+                            <tr>
+                              <th> Faculty of Engineering </th>
+                              <th> ECE Ambassador</th>
+                              <th> Sept, 2020 - Present</th>
+                            </tr>
+                            <tr>
+                              <th> Mental Health Task Force </th>
+                              <th> Research Lead</th>
+                              <th> Sept, 2020 - May, 2021</th>
+                            </tr>
+                          </table>
                       </div>
                   </div>
               </div>
@@ -341,7 +410,12 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                     <div class="card-body">
-                        <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                      <ul>
+                        <li>
+                          Lead a team of ten to design the curriculum for an introductory AI program (Learn AI) at UofT AILeading a team of ten to design the curriculum for an introductory AI program (Learn AI) at UofT AI
+                        </li>
+                      </ul>
+                        
                     </div>
                 </div>
               </div>
@@ -368,7 +442,11 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                     <div class="card-body">
-                        <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                      <ul>
+                        <li> Researched on a new rechargeable battery that makes use of the Earth's magnetic field to self-charge</li>
+                        <li> Accepted into the ICUBE LEAP Startup League to improve our business model and move further with the venture</li>
+                        <li> Obtained the second place prize at the ENACTUS UofT Innovation Pitch Competition</li>
+                      </ul>
                     </div>
                 </div>
               </div>
@@ -382,7 +460,7 @@
               <tbody>
                 <tr>
                   <td>
-                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a rel="noopener" target="_blank" class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/HarshitSohaney/Mapper-65" role="button" aria-expanded="false" aria-controls="mapperInfo">
                       <div class="row gx-3">
                         <div class="col-sm-3 col-img-project">
                           <img src="Pictures/mapper.PNG" alt="mapper" height="70px" width="70px">
@@ -395,7 +473,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/HarshitSohaney/Block-Stack" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
                       <div class="row gx-5">
                         <div class="col-sm-3 col-img-project">
                           <img src="Pictures/block.PNG" alt="blockstack" height="70px" width="70px">
@@ -407,7 +485,7 @@
                       </a>
                   </td>
                   <td>
-                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/HarshitSohaney/Boomerang-GDSC2021" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
                     <div class="row gx-5">
                       <div class="col-sm-3 col-img-project">
                         <img src="Pictures/boomerang.png" alt="boomerang" height="70px" width="70px">
@@ -422,7 +500,7 @@
                 <tr>
                   
                   <td>
-                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://www.coursera.org/account/accomplishments/certificate/WXKW23UCFY4C" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
                       <div class="row gx-5">
                         <div class="col-sm-3 col-img-project">
                           <img src="Pictures/coursera.png" alt="coursera" height="70px" width="70px">
@@ -433,7 +511,20 @@
                       </div>
                       </a>
                   </td>
+                  <td>
+                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://digitalcommons.usu.edu/smallsat/2022/all2022/88/" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div class="row gx-5">
+                        <div class="col-sm-3 col-img-project">
+                          <img src="Pictures/UTAT.png" alt="coursera" height="70px" width="70px">
+                        </div>
+                        <div class="col-sm-9 my-auto">
+                          <p> SmallSat Publication - FINCH</p>
+                        </div>
+                      </div>
+                      </a>
+                  </td>
                 </tr>
+
               </tbody>
             </table>
           </div>
@@ -477,6 +568,33 @@
                      <p class="text-secondary"> Computer Engineering, 2025</p>
                   </div>
                 </div>
+                <br>
+                <div class="row">
+                  <h4> Awards </h4>
+                  <br>
+                  <table class="table table-hover table-borderless">
+                    <tbody>
+                      <tr>
+                        <td class="background-black">
+                          <h5 class="text-white"> Dean's list 2021, 2022 </h5>
+                          <p class="text-secondary small"> Awarded to students maintaining a CGPA above 3.5 </p>
+                        </td>       
+                      </tr>
+                      <tr>
+                        <td class="background-black">
+                          <h5 class="text-white"> School Medal - Euclid Exam 2020 </h5>
+                          <p class="text-secondary small"> Awarded to students achieving the highest grade in a school conducted by the University of Waterloo Euclid Exam</p>
+                        </td>       
+                      </tr>
+                      <tr>
+                        <td class="background-black">
+                          <h5 class="text-white"> Pitch Competition, runners up 2021 </h5>
+                          <p class="text-secondary small"> Pitched an idea for a venture to advance electric aviation</p>
+                        </td>
+                      </tr>
+                    </tbody>      
+                  </table>         
+                </div>
               </div>
               <div class="col">
                 <h4> Relevant Classes </h4>
@@ -502,13 +620,29 @@
                     </tr>
                   </tbody>
                 </table>
+                <br>
+                <h4> Publications </h4>
+                <table class="table table-borderless background-black small">
+                  <tr>
+                    <th>
+                      FINCH: A Blueprint for Accessible and Scientifically Valuable Remote Sensing Satellite Missions
+                    </th>
+                    <th> Aug 5, 2022</th>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      <a rel="noopener" href="https://digitalcommons.usu.edu/smallsat/2022/all2022/88/" alt="smallsat" target="_blank"><img alt="img" src="icons/external-link.png" width="20px" height="20px"> </a> 
+                    </td>
+                  </tr>
+
+                </table>
               </div>
             </div>
             </div>
             
           </div>
         </section>
-        <section class="spotify-section">
+        <section class="spotify-section" id="spotify">
 
         </section>
         
@@ -522,13 +656,13 @@
             <div class="container-fluid">
               <div class="row justify-content-md-center">
                 <div class="col col-lg-auto">
-                  <input type="image" name="Previous" src="icons/back.png" alt="text" width="20" height="20" class="audio-buttons">
+                  <input type="image" id="previous-button" name="Previous"class="audio-buttons" src="icons/back.png" alt="text" width="20" height="20">
                 </div>
                 <div class="col col-md-auto">
-                  <input type="image" name="Play" src="icons/play-button.png" alt="text"  width="35" height="35">
+                  <input name="Play" type="image" id="play-button" src="icons/play-button.png"  alt="text"   width="35" height="35">
                 </div>
                 <div class="col col-lg-auto">
-                  <input type="image" name="Next" src="icons/next.png" alt="text"  width="20" height="20" class="audio-buttons">
+                  <input type="image" name="Next" id="next-button" href="#skills" class="audio-buttons"  src="icons/next.png" alt="text"  width="20" height="20">
                 </div>
               </div>
             </div>
