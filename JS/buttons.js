@@ -62,11 +62,11 @@ function checkView() {
 
 let scrollerID;
 let paused = true;
-let interval = 15;
+let interval = 100;
 
 function startScroll(){
     let id = setInterval(function() {
-        window.scrollBy(0, 2000);
+        setInterval(window.scrollBy(0,10),150);
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) { 
             stopScroll();
         }
@@ -81,9 +81,15 @@ document.getElementById('play-button').addEventListener('click', function() {
     if(paused == true) {
         scrollerID = startScroll();
         paused = false;
+        $('#play-button').click(function() {
+            $(this).attr("src","icons/pause.png")
+        })
     }
     else {
         stopScroll();
         paused = true;
+        $('#play-button').click(function() {
+            $(this).attr("src","icons/play-button.png")
+        })
     }
 }, true);

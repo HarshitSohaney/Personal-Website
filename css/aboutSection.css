@@ -6,7 +6,15 @@
     min-height: 425px;
     max-width: 825px;
 }
-
+.background-grey {
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s;
+}
+.background-grey:hover {
+    background-color: rgb(64, 64, 64);
+}
 .aboutSection {
     background-image: url('../Pictures/aboutImg.jpg');
     background-size:cover;

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@100;400;600;800&display=swap');
 
 .container-grid {
   font-family: 'Montserrat', sans-serif;
   font-size:20px;
+  scroll-behavior: smooth;
 }
 .sidebar {
   height: 100%;
@@ -136,6 +137,6 @@ h4 {
 .Nav { grid-area: Nav; }
 .main-content { 
   grid-area: 1 / 2 / 3 / 4;
-  height: 4000px;
+  height: 2900px;
   z-index: 0;
  }
