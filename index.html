@@ -23,7 +23,7 @@
 </head>
 <body>
   <div class="container-grid">
-    <div class="Navbar sidebar">
+    <div class="Navbar sidebar" id="sidebar">
       <div class="Links">
         <a rel="noopener" href="https://www.linkedin.com/in/harshitsohaney/" target="_blank">
           <img alt="LinkedIn" src="icons/in.png"
@@ -672,23 +672,35 @@
         <div class="container">
           <div class="row">
             <div class="container-fluid">
-              <div class="row justify-content-md-center">
-                <div class="col col-lg-auto">
-                  <input type="image" id="previous-button" name="Previous"class="audio-buttons" src="icons/previous-grey.png" alt="text" width="20" height="20" onmouseover="hover_prev(this);" onmouseout="unhover_prev(this);">
+              <div class="row justify-content-md-center d-flex">
+                <div class="col col-lg-auto float-end">
+                  <div class="float-end">
+                    <input type="image" id="previous-button" name="Previous"class="audio-buttons" src="icons/previous-grey.png" alt="text" width="20" height="20" onmouseover="hover_prev(this);" onmouseout="unhover_prev(this);">
+                  </div>
                 </div>
+                  
                 <div class="col col-md-auto">
-                  <input name="Play" type="image" id="play-button" src="icons/play-button.png"  alt="text"   width="35" height="35">
+                  <div class="d-flex justify-content-center">
+                    <input name="Play" type="image" id="play-button" src="icons/play-button.png"  alt="text"   width="35" height="35">
+                  </div>
+                  
                 </div>
                 <div class="col col-lg-auto">
-                  <input type="image" name="Next" id="next-button" href="#skills" class="audio-buttons"  src="icons/next-grey.png" alt="text"  width="20" height="20" onmouseover="hover_next(this);" onmouseout="unhover_next(this);">
+                  <div class="float-start">
+                    <input type="image" name="Next" id="next-button" href="#skills" class="audio-buttons"  src="icons/next-grey.png" alt="text"  width="20" height="20" onmouseover="hover_next(this);" onmouseout="unhover_next(this);">
+                  </div>
+                  
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="progress-container">
-              <div class="progress-bar" id="myBar"></div>
+            <div class="progress-bar-wrapper">
+              <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
