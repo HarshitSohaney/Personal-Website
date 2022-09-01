@@ -32,7 +32,6 @@
 
 .sidebar .basic-info {
   padding-top: 20px;
-  height: 200px;
 }
 
 .song-selection {
@@ -94,7 +93,6 @@
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
   .sidenav {
-    height: auto;
     padding: 15px;
   }
   .row.content {height:auto;} 
@@ -104,13 +102,9 @@
   .footer-info {
     display:none;
   }
-  .Nav {
-    display: fixed;
+  .main-content{
+    width: 500px;
   }
-  .container-grid{
-    width: 900px;
-  }
-
 }
 
 h4 {
