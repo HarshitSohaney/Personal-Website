@@ -83,7 +83,7 @@
   font-weight: 600;
   font-family: montserrat;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (min-width: 450px) {
   .footer-info {
     display: none;
   }
@@ -113,4 +113,37 @@
   .player-buttons {
     padding: 5px;
   }
+}
+@media screen and (max-width: 450px) {
+  .footer-info {
+    display: none;
+  }
+  .footer {
+    height: 100px;
+  }
+  .progress-container {
+    width: 100%;
+  }
+  #previous-button, #next-button {
+    width: 30px;
+    height: 30px;
+  }
+  #play-button {
+    width: 50px;
+    height: 50px;
+  }
+  .audio-buttons {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .player-buttons {
+    padding: 20px;
+  }
+  .footer {
+    grid-template-areas: 
+    "footer-info footer-player footer-right"
+    "footer-info footer-player footer-right"
+    "footer-info footer-player footer-right"; 
+  }
+
 }
