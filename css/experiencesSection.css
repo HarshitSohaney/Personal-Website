@@ -62,7 +62,16 @@
 }
 .accordion-button:not(.collapsed)::after {
 	background-image: url("../icons/pause-button-cc.png");
+  transform: none;
 }
 .accordion-button:hover::after {
 	background-image: url("../icons/play-button-cc.png");
+  transform: 0.4s;
+}
+.accordion-button:not(.collapsed) {
+  color: #1ed760;
+  background-color: #333333;
+}
+.accordion-button:focus {
+  box-shadow: #1ed760 !important;
 }
