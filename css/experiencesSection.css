@@ -52,3 +52,17 @@
     font-size: medium;
   }
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+  /* accordian button */
+  .accordion-button:after {
+    background-image: #191414;
+  }
+.accordion-button:hover:not(.collapsed)::after {
+	background-image: url("../icons/pause-button-cc.png");
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("../icons/pause-button-cc.png");
+}
+.accordion-button:hover::after {
+	background-image: url("../icons/play-button-cc.png");
+}

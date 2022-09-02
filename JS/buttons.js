@@ -90,7 +90,7 @@ document.getElementById('play-button').addEventListener('click', function() {
         scrollerID = startScroll();
         paused = false;
         $('#play-button').click(function() {
-            $(this).attr("src","icons/pause.png")
+            $(this).attr("src","icons/pause-button.png")
         })
     }
     else {
