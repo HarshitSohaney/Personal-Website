@@ -83,7 +83,7 @@
   font-weight: 600;
   font-family: montserrat;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .footer-info {
     display: none;
   }
