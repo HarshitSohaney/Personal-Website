@@ -87,11 +87,11 @@ function stopScroll() {
 }
 document.getElementById('play-button').addEventListener('click', function() {
     if(paused == true) {
-        scrollerID = startScroll();
-        paused = false;
         $('#play-button').click(function() {
             $(this).attr("src","icons/pause-button.png")
         })
+        scrollerID = startScroll();
+        paused = false;
     }
     else {
         stopScroll();
