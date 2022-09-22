@@ -75,7 +75,7 @@ let interval = 100;
 function startScroll(){
     let id = setInterval(function() {
         setInterval(window.scrollBy(0,10),150);
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) { 
+        if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { 
             stopScroll();
         }
     }, interval);
