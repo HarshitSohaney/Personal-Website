@@ -94,10 +94,11 @@ document.getElementById('play-button').addEventListener('click', function() {
         paused = false;
     }
     else {
-        stopScroll();
-        paused = true;
         $('#play-button').click(function() {
             $(this).attr("src","icons/play-button.png")
         })
+        stopScroll();
+        paused = true;
+        
     }
 }, true);
