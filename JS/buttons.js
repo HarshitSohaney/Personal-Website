@@ -84,6 +84,9 @@ function startScroll(){
 
 function stopScroll() {
     clearInterval(scrollerID);
+    $('#play-button').click(function() {
+        $(this).attr("src","icons/play-button.png")
+    })
 }
 document.getElementById('play-button').addEventListener('click', function() {
     if(paused == true) {
@@ -94,11 +97,15 @@ document.getElementById('play-button').addEventListener('click', function() {
         paused = false;
     }
     else {
-        $('#play-button').click(function() {
-            $(this).attr("src","icons/play-button.png")
-        })
+        
         stopScroll();
         paused = true;
         
     }
 }, true);
+
+$(window).on('scroll', function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { 
+        stopScroll();
+    }
+  });
