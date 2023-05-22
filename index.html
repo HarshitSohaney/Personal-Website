@@ -91,7 +91,7 @@
     <div class="main-content">
       <section class="section hero-intro about-section gray-bg hero-section" id="hero">
         <div class="container-fluid">
-            <div class="row align-items-center flex-row-reverse">
+            <div class="row align-items-center flex-row-reverse search-tag">
               
               <div class="col-lg-8">
                 <div class="about-text go-to">
@@ -133,7 +133,13 @@
         </div>
       </section>
       <div id="navbar">
-        <input type="text" class="text-box" placeholder=". . ." id="search"> 
+        <input 
+          type="text" 
+          class="text-box" 
+          placeholder=". . ." 
+          id="search"
+          name="search"
+        >
       </div> 
       <div class="content">
         <!-- <section class="song-selection">
@@ -153,7 +159,7 @@
           <h4> Programming languages </h4>
           <br>
           <div class="container">
-            <div class="row">
+            <div class="row search-tag">
                 <div class="col-md">
                     <div class="card h-100">
                       <div class="container-box">
@@ -222,7 +228,7 @@
           <h4> Development Tools </h4>
           <br>
           <div class="container">
-            <div class="row">
+            <div class="row search-tag">
                 <div class="col-sm">
                     <div class="card h-100">
                       <div class="container-box">
@@ -292,7 +298,7 @@
             <h4>Past experience</h4> 
             <br>
             <div id="myAccordion">
-              <div class="accordion-item">
+              <div class="accordion-item search-tag">
                 <h2 class="accordion-header" id="headingOne">
                     <button type="button" class="accordion-button background-black" data-bs-toggle="collapse" data-bs-target="#collapseOne">
                       <div class="container">
@@ -324,7 +330,7 @@
                     </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item search-tag">
                   <h2 class="accordion-header" id="headingTwo">
                       <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
                         <div class="container">
@@ -378,7 +384,7 @@
                       </div>
                   </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item search-tag">
                   <h2 class="accordion-header" id="headingThree">
                       <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseThree">
                         <div class="container">
@@ -470,7 +476,7 @@
                       </div>
                   </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item search-tag">
                 <h2 class="accordion-header" id="headingFour">
                     <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseFour">
                       <div class="container">
@@ -504,7 +510,7 @@
                     </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item search-tag">
                 <h2 class="accordion-header" id="headingFive">
                     <button type="button" class="accordion-button collapsed background-black" data-bs-toggle="collapse" data-bs-target="#collapseFive">
                       <div class="container">
@@ -538,7 +544,7 @@
             </div>
           </div>
         </section>
-        <section class="projects-section" id="projects">
+        <section class="projects-section search-tag" id="projects">
           <div class="project-padding">
             <br>
             <h4>Projects I've worked on</h4> 
@@ -642,7 +648,7 @@
               <h4> About </h4>
               <br>
               <div class="bg-image text-white">
-                <div class="aboutSection">
+                <div class="aboutSection search-tag">
                   <div class="d-flex">
                     <div class="text-white text-alignment">
                       <br>
@@ -666,7 +672,7 @@
               </div>
               <br>
               <div class="row">
-                <div class="col">
+                <div class="col search-tag">
                   <h4> Education </h4>
                   <br>
                   <div class="row">
@@ -706,7 +712,7 @@
                     </table>         
                   </div>
                 </div>
-                <div class="col">
+                <div class="col search-tag">
                   <h4> Relevant Classes </h4>
                   <table class="table table-borderless table-background">
                     <tbody>
@@ -816,5 +822,6 @@
 <script src="JS/navbar.js"></script>
 <script src="JS/footer.js"></script>
 <script src="JS/buttons.js"></script>
+<script src="JS/search.js"></script>
 
 </html>
