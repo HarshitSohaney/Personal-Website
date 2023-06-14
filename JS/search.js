@@ -15,10 +15,10 @@ searchElement.addEventListener('keyup', function(event) {
                 window.scrollTo(0, options.top - 100);
 
                 // if it is an accordian, open it
-                if (x[i].classList.contains('accordian')) {
-                    x[i].click();
+                if (x[i].classList.contains("accordion-item")) {
+                    // x[i].click();
                 }
-                
+
                 found = true;
             }
         }
