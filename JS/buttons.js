@@ -70,7 +70,7 @@ function checkView() {
 
 let scrollerID;
 let paused = true;
-let interval = 100;
+let interval = 40;
 
 function startScroll(){
     let id = setInterval(function() {
