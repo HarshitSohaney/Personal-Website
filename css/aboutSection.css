@@ -60,6 +60,14 @@
 .mobile-text {
     display: none;
 }
+
+.schpiel:hover {
+    /* make background translucent */
+    background-color: #525252 !important;
+    background-color: rgba(82, 82, 82, 1.5);
+    transition: 0.4s;
+}
+
 @media screen and (max-width: 750px) {
     .img-style-education {
         display: none;

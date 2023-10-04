@@ -5,10 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "firefox",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "d:\\VScode\\SpotifyWebsite\\index.html"
+            "firefoxExecutable": "nightly",
+            "name": "Launch index.html",
+            "reAttach": true,
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }
