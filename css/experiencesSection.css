@@ -4,14 +4,9 @@
   line-height: 20px;
  }
  .accordion {
-    background-color: #121212;
     color: #fff;
     cursor: pointer;
-    padding: 100px 30px 100px 30px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
+    padding: 0em 30px 100px 30px;
     transition: 0.4s;
   }
   button img {

@@ -11,6 +11,9 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+.content {
+  background-color: #121212;
+}
 .sidebar {
   height: 100%;
   position: fixed;
@@ -92,6 +95,20 @@ body {
   z-index: 0;
 }
 
+.play-page-section {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  width: 17%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-page-section input:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 40px;}

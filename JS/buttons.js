@@ -73,6 +73,9 @@ let paused = true;
 let interval = 40;
 
 function startScroll(){
+    $('.play-button').each(function() {
+        $(this).attr("src","icons/pause-button.png")
+    });
     let id = setInterval(function() {
         setInterval(window.scrollBy(0,10),150);
         if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { 
@@ -84,28 +87,38 @@ function startScroll(){
 
 function stopScroll() {
     clearInterval(scrollerID);
-    $('#play-button').click(function() {
+    $('.play-button').each(function() {
         $(this).attr("src","icons/play-button.png")
-    })
+    });
 }
-document.getElementById('play-button').addEventListener('click', function() {
-    if(paused == true) {
-        $('#play-button').click(function() {
-            $(this).attr("src","icons/pause-button.png")
-        })
-        scrollerID = startScroll();
-        paused = false;
+
+let playButtons = document.getElementsByClassName('play-button');
+
+Array.from(playButtons).forEach(element => {
+    element.onclick = function() {
+        if(paused) {
+            scrollerID = startScroll();
+            paused = false;
+        } else {
+            stopScroll();
+            paused = true;
+        }
     }
-    else {
-        
-        stopScroll();
-        paused = true;
-        
-    }
-}, true);
+});
 
 $(window).on('scroll', function() {
     if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { 
         stopScroll();
     }
   });
+
+// For the shuffle button
+let shuffleButton = document.getElementsByClassName('shuffle-button');
+
+Array.from(shuffleButton).forEach(element => {
+    element.onclick = function() {
+        // go to a random section
+        let randomNum = Math.floor(Math.random() * sectionArray.length);
+        document.getElementById(sectionArray[randomNum]).scrollIntoView({behavior: 'auto'});
+    }
+});
