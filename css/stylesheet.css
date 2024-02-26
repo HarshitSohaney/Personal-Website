@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@100;400;600;800&display=swap');
 
+body {
+  background-color: #000000;
+}
 .container-grid {
   font-family: 'Montserrat', sans-serif;
   font-size:20px;
   scroll-behavior: smooth;
+  display: flex;
+  justify-content: flex-end;
 }
 .sidebar {
   height: 100%;
   position: fixed;
-  width: 163px;
+  width: 15%;
   top: 0;
   color: white;
   left: 0;
   background-color: rgb(0,0,0);
-  padding: 10px;
 }
+
 .sidebar a {
   padding: 8px;
   color: whitesmoke;
@@ -23,11 +28,13 @@
   font-weight: 600;
   display: block;
   text-decoration: none;
+  padding: 1em 1.5em;
   }
   
   .sidebar a:hover {
   cursor: pointer;
   opacity: .7;
+  transition: 0.3s;
   }
 
 .sidebar .basic-info {
@@ -108,25 +115,21 @@
   .main-content{
     width: 500px;
   }
-}
-@media screen and (max-width: 500px) {
-  .Nav {
-    display: block;
+  .Navbar .sidebar {
+    display: none;
   }
 }
+@media screen and (max-width: 500px) {
+  
+}
+
 h4 {
   font-weight: 600;
   font-family: 'Montserrat';
   font-size: 20px;
   color: white;
 }
-.container-grid {
-  display: grid; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 163px 2.1fr 0.6fr; 
-  grid-template-rows: 1fr 1.6fr 0.4fr; 
-  gap: 0px 0px; 
-}
+
 .Navbar {
   display: grid; 
   padding: 10px;
@@ -143,14 +146,27 @@ h4 {
 .Links { 
   grid-area: Links;
   white-space: nowrap;
- 
- }
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  border-radius: 6px;
+  padding: 0.5em 0;
+
+}
  .Links p{
   display: inline-block;
+  margin: inherit;
  }
 .Nav { grid-area: Nav; }
 .main-content { 
-  grid-area: 1 / 2 / 3 / 4;
-  height: 2900px;
-  z-index: 0;
+  width: 85%;
+  background-color: #000000;
+  padding: 10px 0;
+ }
+
+ nav {
+  height: auto;
+  margin: 1em 0;
+  background-color: #121212;
+  border-radius: 6px;
  }

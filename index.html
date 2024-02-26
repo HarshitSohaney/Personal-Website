@@ -10,6 +10,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2H2ET3Y4WE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2H2ET3Y4WE');
+  </script>
+
   <link rel ="stylesheet" href="css/searchStyle.css">
   
   <link rel ="stylesheet" href="css/heroSection.css">
@@ -77,11 +88,10 @@
         <br>
       </div>
       <div class="Nav">
-        <hr class="solid">
         <nav>
-          <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
           <a href="#about">About me</a>
           </nav>
       </div>
@@ -137,7 +147,7 @@
         <input 
           type="text" 
           class="text-box" 
-          placeholder=". . ." 
+          placeholder="Search . . ." 
           id="search"
           name="search"
         >
@@ -153,177 +163,10 @@
           <br><br><br>
           <br><br><br>
         </section> -->
-
-        <section class="skills-section" id="skills">
-          <br>
-          <br>
-          <h4> Programming languages </h4>
-          <br>
-          <div class="container">
-            <div class="row search-tag">
-                <div class="col-md">
-                    <div class="card h-100">
-                      <div class="container-box">
-                        <img src="Pictures/C++.png" class="card-img-top" alt="C++" height="10px" width="10px">
-                      </div>
-                        
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">C++ Programming</h5>
-                            <p class="card-text"> Proficient</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card h-100">
-                      <div class="container-box">
-                        <img src="Pictures/C.png" class="card-img-top" alt="C" height="20px" width="20px">
-                      </div>
-                        
-                      <div class="card-body">
-                          <h5 class="card-title fw-bold">C Programming</h5>
-                          <p class="card-text">Proficient</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card h-100">
-                      <div class="container-box">
-                        <img src="Pictures/js.png" class="card-img-top" alt="JS">
-                      </div>
-                        
-                      <div class="card-body">
-                          <h5 class="card-title fw-bold">JavaScript</h5>
-                          <p class="card-text">Proficient</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                  <div class="card h-100">
-                    <div class="container-box">
-                      <img src="Pictures/python.png" class="card-img-top" alt="python" height="20px" width="20px">
-                    </div>
-                     
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Python</h5>
-                        <p class="card-text">Proficient</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md">
-                  <div class="card h-100">
-                    <div class="container-box">
-                      <img src="Pictures/Csharp.png" class="card-img-top" alt="C#" height="20px" width="20px">
-                    </div>
-                      
-                      <div class="card-body">
-                          <h5 class="card-title fw-bold">C# Programming</h5>
-                          <p class="card-text">Intermediate
-                          </p>
-                      </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <br>
-          <br>
-          <h4> Development Tools </h4>
-          <br>
-          <div class="container">
-            <div class="row search-tag">
-                <!-- <div class="col-sm">
-                <!-- <div class="col-sm">
-                    <div class="card h-100">
-                      <div class="container-box">
-                        <img src="Pictures/stm32.png" class="card-img-top" alt="C" height="20px" width="20px">
-                        <img src="Pictures/stm32.png" class="card-img-top" alt="C" height="20px" width="20px">
-                      </div>
-                        
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">STM32 IDE</h5>
-                            <h5 class="card-title fw-bold">STM32 IDE</h5>
-                            <p class="card-text"> Intermediate </p>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-sm">
-                    <div class="card h-100">
-                      <div class="container-box">
-                        <img src="icons/React.svg.png" class="card-img-top" alt="C" height="20px" width="20px">
-                      </div>
-                        
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">ReactJS</h5>
-                            <p class="card-text"> Intermediate </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-sm">
-                    <div class="card h-100">
-                      <div class="container-box">
-                        <img src="Pictures/gcp.png" class="card-img-top" alt="gcp">
-                      </div>
-                        
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Google Cloud Platform</h5>
-                            <p class="card-text"> Beginner </p>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-sm">
-                    <div class="card h-100">
-                      <div class="container-box">
-                        <img src="icons/django.png" class="card-img-top" alt="gcp">
-                      </div>
-                        
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Django</h5>
-                            <p class="card-text"> Intermediate </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                  <div class="card h-100">
-                    <div class="container-box">
-                      <img src="Pictures/netcore.png" class="card-img-top" alt="netcore">
-                    </div>
-                      
-                      <div class="card-body">
-                          <h5 class="card-title fw-bold">.NET Core</h5>
-                          <p class="card-text"> Intermediate </p>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <div class="card h-100">
-                    <div class="container-box">
-                      <img src="Pictures/arm.svg" class="card-img-top" alt="arm" height="20px" width="20px">
-                    </div>
-                      
-                      <div class="card-body">
-                          <h5 class="card-title fw-bold">ARM Assembly</h5>
-                          <p class="card-text">Beginner</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <div class="card h-100">
-                    <div class="container-box">
-                      <img src="Pictures/Pytorch_logo.png" class="card-img-top" alt="pytorch" height="20px" width="20px">
-                    </div>
-                      
-                      <div class="card-body">
-                          <h5 class="card-title fw-bold">PyTorch</h5>
-                          <p class="card-text"> Intermediate</p>
-                      </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </section>
         <section class="experiences-section" id="experience">
           <div class="accordion">
             <br>
-            <h4>Past experience</h4> 
+            <h4>Experience</h4> 
             <br>
             <div id="myAccordion search-tag">
               <!-- Mozilla -->
@@ -685,6 +528,18 @@
               <tbody>
                 <tr>
                   <td>
+                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://www.youtube.com/watch?v=2kAptDVbWks" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div class="row gx-5">
+                        <div class="col-sm-3 col-img-project">
+                          <img src="Pictures/syllabyte.png" alt="syllabyte" height="70px" width="70px">
+                        </div>
+                        <div class="col-sm-9 my-auto">
+                          <p> Syllabyte </p>
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
                     <a rel="noopener" target="_blank" class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/HarshitSohaney/Mapper-65" role="button" aria-expanded="false" aria-controls="mapperInfo">
                       <div class="row gx-5">
                         <div class="col-sm-3 col-img-project">
@@ -698,6 +553,20 @@
                     </a>
                   </td>
                   <td>
+                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/maiseyperelonia/moodlist" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div class="row gx-5">
+                        <div class="col-sm-3 col-img-project">
+                          <img src="Pictures/spotify.jpg" alt="IBM" height="70px" width="70px">
+                        </div>
+                        <div class="col-sm-9 my-auto">
+                          <p> Moodlist - Mood Predictor</p>
+                        </div>
+                      </div>
+                      </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
                     <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/HarshitSohaney/Block-Stack" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
                       <div class="row gx-5">
                         <div class="col-sm-3 col-img-project">
@@ -705,6 +574,18 @@
                         </div>
                         <div class="col-sm-9 my-auto">
                           <p> Block Stack Game </p>
+                        </div>
+                      </div>
+                      </a>
+                  </td>
+                  <td>
+                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/cam-rod/UTAT-spi-sd-test" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div class="row gx-5">
+                        <div class="col-sm-3 col-img-project">
+                          <img src="Pictures/UTAT.png" alt="UTAT" height="70px" width="70px">
+                        </div>
+                        <div class="col-sm-9 my-auto">
+                          <p> FINCH SD Card System</p>
                         </div>
                       </div>
                       </a>
@@ -723,40 +604,9 @@
                   </td>
                 </tr>
                 <tr>
-                  
-                  <td>
-                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/maiseyperelonia/moodlist" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <div class="row gx-5">
-                        <div class="col-sm-3 col-img-project">
-                          <img src="Pictures/spotify.jpg" alt="IBM" height="70px" width="70px">
-                        </div>
-                        <div class="col-sm-9 my-auto">
-                          <p> Moodlist - Mood Predictor</p>
-                        </div>
-                      </div>
-                      </a>
-                  </td>
-                  <td>
-                    <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://github.com/cam-rod/UTAT-spi-sd-test" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <div class="row gx-5">
-                        <div class="col-sm-3 col-img-project">
-                          <img src="Pictures/UTAT.png" alt="UTAT" height="70px" width="70px">
-                        </div>
-                        <div class="col-sm-9 my-auto">
-                          <p> FINCH SD Card System</p>
-                        </div>
-                      </div>
-                      </a>
-                  </td>
                   <td>
                     <a class="btn btn-secondary col-style-project img-container" data-toggle="collapse" href="https://www.coursera.org/account/accomplishments/certificate/WXKW23UCFY4C" rel="noopener" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
                       <div class="row gx-5">
-                        <!-- <div class="col-sm-3 col-img-project">
-                          <img src="Pictures/ibm.svg" alt="IBM" height="70px" width="70px">
-                        </div>
-                        <div class="col-sm-9 my-auto">
-                          <p> AI Explainability 360 </p>
-                        </div> -->
                         <div class="col-sm-3 col-img-project">
                           <img src="Pictures/coursera.png" alt="coursera" height="70px" width="70px">
                         </div>
@@ -766,14 +616,178 @@
                       </div>
                       </a>
                   </td>
-                  <td>
                 </tr>
-
               </tbody>
             </table>
           </div>
           
-        </section>       
+        </section>  
+        <section class="skills-section" id="skills">
+          <br>
+          <br>
+          <h4> Programming languages </h4>
+          <br>
+          <div class="container">
+            <div class="row search-tag">
+                <div class="col-md">
+                    <div class="card h-100">
+                      <div class="container-box">
+                        <img src="Pictures/C++.png" class="card-img-top" alt="C++" height="10px" width="10px">
+                      </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">C++ Programming</h5>
+                            <p class="card-text"> Proficient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card h-100">
+                      <div class="container-box">
+                        <img src="Pictures/C.png" class="card-img-top" alt="C" height="20px" width="20px">
+                      </div>
+                        
+                      <div class="card-body">
+                          <h5 class="card-title fw-bold">C Programming</h5>
+                          <p class="card-text">Proficient</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card h-100">
+                      <div class="container-box">
+                        <img src="Pictures/js.png" class="card-img-top" alt="JS">
+                      </div>
+                        
+                      <div class="card-body">
+                          <h5 class="card-title fw-bold">JavaScript</h5>
+                          <p class="card-text">Proficient</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                  <div class="card h-100">
+                    <div class="container-box">
+                      <img src="Pictures/python.png" class="card-img-top" alt="python" height="20px" width="20px">
+                    </div>
+                     
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Python</h5>
+                        <p class="card-text">Proficient</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="card h-100">
+                    <div class="container-box">
+                      <img src="Pictures/Csharp.png" class="card-img-top" alt="C#" height="20px" width="20px">
+                    </div>
+                      
+                      <div class="card-body">
+                          <h5 class="card-title fw-bold">C# Programming</h5>
+                          <p class="card-text">Intermediate
+                          </p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <h4> Development Tools </h4>
+          <br>
+          <div class="container">
+            <div class="row search-tag">
+                <!-- <div class="col-sm">
+                <!-- <div class="col-sm">
+                    <div class="card h-100">
+                      <div class="container-box">
+                        <img src="Pictures/stm32.png" class="card-img-top" alt="C" height="20px" width="20px">
+                        <img src="Pictures/stm32.png" class="card-img-top" alt="C" height="20px" width="20px">
+                      </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">STM32 IDE</h5>
+                            <h5 class="card-title fw-bold">STM32 IDE</h5>
+                            <p class="card-text"> Intermediate </p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-sm">
+                    <div class="card h-100">
+                      <div class="container-box">
+                        <img src="icons/React.svg.png" class="card-img-top" alt="C" height="20px" width="20px">
+                      </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">ReactJS</h5>
+                            <p class="card-text"> Intermediate </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm">
+                    <div class="card h-100">
+                      <div class="container-box">
+                        <img src="Pictures/gcp.png" class="card-img-top" alt="gcp">
+                      </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Google Cloud Platform</h5>
+                            <p class="card-text"> Beginner </p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-sm">
+                    <div class="card h-100">
+                      <div class="container-box">
+                        <img src="icons/django.png" class="card-img-top" alt="gcp">
+                      </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Django</h5>
+                            <p class="card-text"> Intermediate </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card h-100">
+                    <div class="container-box">
+                      <img src="Pictures/netcore.png" class="card-img-top" alt="netcore">
+                    </div>
+                      
+                      <div class="card-body">
+                          <h5 class="card-title fw-bold">.NET Core</h5>
+                          <p class="card-text"> Intermediate </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card h-100">
+                    <div class="container-box">
+                      <img src="Pictures/arm.svg" class="card-img-top" alt="arm" height="20px" width="20px">
+                    </div>
+                      
+                      <div class="card-body">
+                          <h5 class="card-title fw-bold">ARM Assembly</h5>
+                          <p class="card-text">Beginner</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card h-100">
+                    <div class="container-box">
+                      <img src="Pictures/Pytorch_logo.png" class="card-img-top" alt="pytorch" height="20px" width="20px">
+                    </div>
+                      
+                      <div class="card-body">
+                          <h5 class="card-title fw-bold">PyTorch</h5>
+                          <p class="card-text"> Intermediate</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>     
         <section class="about-me-section" id="about">
           <div class="about-me-section">
             <div class="container-aboutme">
@@ -900,57 +914,59 @@
       </div>
     
     </div>
-    <div class="footer footerStyle">
-      <div class="footer-player">
-        <div class="container">
-          <div class="row">
-            <div class="container-fluid">
-              <div class="row justify-content-md-center d-flex">
-                <div class="col col-lg-auto float-end">
-                  <div class="float-end">
-                    <input type="image" id="previous-button" name="Previous"class="audio-buttons" src="icons/previous-grey.png" alt="text" width="20" height="20" onmouseover="hover_prev(this);" onmouseout="unhover_prev(this);">
-                  </div>
-                </div>
-                  
-                <div class="col col-md-auto">
-                  <div class="d-flex justify-content-center">
-                    <input name="Play" type="image" id="play-button" src="icons/play-button.png"  alt="text"   width="35" height="35">
-                  </div>
-                  
-                </div>
-                <div class="col col-lg-auto">
-                  <div class="float-start">
-                    <input type="image" name="Next" id="next-button" href="#skills" class="audio-buttons"  src="icons/next-grey.png" alt="text"  width="20" height="20" onmouseover="hover_next(this);" onmouseout="unhover_next(this);">
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="progress-bar-wrapper">
-              <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="footer-info">
-        <div class="album-info">
-          <img src="icons/web-programming.png" alt="album-cover" class="album-cover" width="65px" height="65px">
-          <p class="album-name">Harshit Sohaney</p>
-          <p> Toronto, ON</p>
-        </div>
-        
-                 
-        
-      </div>
-      <div class="footer-right"></div>
-    </div>
-
+  </div>
 </body>
+<footer>
+  <div class="footer footerStyle">
+    <div class="footer-player">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <div class="row justify-content-md-center d-flex">
+              <div class="col col-lg-auto float-end">
+                <div class="float-end">
+                  <input type="image" id="previous-button" name="Previous"class="audio-buttons" src="icons/previous-grey.png" alt="text" width="20" height="20" onmouseover="hover_prev(this);" onmouseout="unhover_prev(this);">
+                </div>
+              </div>
+                
+              <div class="col col-md-auto">
+                <div class="d-flex justify-content-center">
+                  <input name="Play" type="image" id="play-button" src="icons/play-button.png"  alt="text"   width="35" height="35">
+                </div>
+                
+              </div>
+              <div class="col col-lg-auto">
+                <div class="float-start">
+                  <input type="image" name="Next" id="next-button" href="#skills" class="audio-buttons"  src="icons/next-grey.png" alt="text"  width="20" height="20" onmouseover="hover_next(this);" onmouseout="unhover_next(this);">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="progress-bar-wrapper">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="album-info">
+        <img src="icons/web-programming.png" alt="album-cover" class="album-cover" width="65px" height="65px">
+        <div class="album-info__text">
+            <p class="album-name">Harshit Sohaney</p>
+            <p>Toronto, ON</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-right">
+      <!-- Use the play button to auto-scroll, and the next and previous buttons to navigate through the site! -->
+    </div>
+</footer>
 <script src="JS/navbar.js"></script>
 <script src="JS/footer.js"></script>
 <script src="JS/buttons.js"></script>

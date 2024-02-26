@@ -1,5 +1,5 @@
 .footerStyle {
-    background-color: #343232;
+    background-color: #000000;
     color: white;
     bottom: 0;
     position: fixed;
@@ -29,7 +29,9 @@
   color: #fff;
   white-space: nowrap;
  }
-.footer-right { grid-area: footer-right; }
+.footer-right { 
+  grid-area: footer-right; 
+} 
 .footer-player { 
   grid-area: footer-player;
   padding: 10px;
@@ -68,9 +70,20 @@
 .audio-buttons:active {
   transform: translateY(1px);
 }
-.album-info p{
-  font-size: 13px;
-  display: inline-block;
+.album-info {
+  display: flex;
+  flex-direction: row;
+  padding: inherit;
+}
+.album-info__text {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.5em;
+}
+.album-info__text p {
+  margin: inherit;
 }
 .album-text-secondary {
   font-size: 8px;
@@ -98,6 +111,7 @@
   }
   .footerStyle {
     max-width: 163px;
+
   }
   #previous-button, #next-button {
     width: 18px;

@@ -1,5 +1,5 @@
 .about-me-section {
-    background-color: #191414;
+    background-color: #121212;
     padding: 20px;
 }
 .container-aboutme {
@@ -7,7 +7,7 @@
     max-width: 825px;
 }
 .background-grey {
-    background-color: rgb(37, 37, 37);
+    background-color: #121212;
     border-radius: 5px;
     color: white;
     transition: 0.4s;
@@ -46,7 +46,7 @@
 }
 
 .table-background {
-    background-color: #191414;
+    background-color: #121212;
     color: white;
     transition: 0.4s;
     font-size: medium;
