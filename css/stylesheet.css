@@ -22,6 +22,10 @@ body {
   color: white;
   left: 0;
   background-color: rgb(0,0,0);
+  overflow: scroll;
+  /* make scrollbar invisible */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .sidebar a {
@@ -109,35 +113,9 @@ body {
   opacity: 0.7;
   transition: 0.3s;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 40px;}
-}
+
 .dissapearLinks {
   display: none;
-}
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-  .sidenav {
-    padding: 15px;
-  }
-  .row.content {height:auto;} 
-  .Nav {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .main-content{
-    width: 500px;
-  }
-  .Navbar .sidebar {
-    display: none;
-  }
-}
-@media screen and (max-width: 500px) {
-  
 }
 
 h4 {
@@ -146,7 +124,6 @@ h4 {
   font-size: 20px;
   color: white;
 }
-
 .Navbar {
   display: grid; 
   padding: 10px;
@@ -160,17 +137,18 @@ h4 {
     "Nav Nav Nav"; 
   grid-area: 1 / 1 / 4 / 2; 
 }
-.Links { 
+.Links, .dissapearLinks { 
   grid-area: Links;
   white-space: nowrap;
-  display: flex;
   flex-direction: column;
   background-color: #121212;
   border-radius: 6px;
   padding: 0.5em 0;
-
 }
- .Links p{
+.Links {
+  display: flex;
+}
+.Links p{
   display: inline-block;
   margin: inherit;
  }
@@ -187,3 +165,29 @@ h4 {
   background-color: #121212;
   border-radius: 6px;
  }
+
+ /* style for 775px */
+@media screen and (max-width: 950px){
+  .play-page-section {
+    width: 50%;
+  }
+  .sidebar {
+    width: 25%;
+  }
+  .main-content {
+    width: 75%;
+  }
+}
+
+ @media screen and (max-width: 600px) {
+  #sidebar {
+    display: none;
+    width: 0;
+  } 
+  .main-content {
+    width: 100%;
+  }
+  .container-grid {
+    font-size: small;
+  }
+}

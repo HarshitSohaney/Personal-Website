@@ -12,30 +12,7 @@
   button img {
     display: block;
   }
-@media screen and (max-width: 750px) {
-  .accordion{
-    font-size: 10px;
-  }
-  .accordion-header {
-    height: 100px;
-    line-height: 20px;
-  }
-  button img {
-    display: none;
-  }
-}
-@media screen and (max-width: 500px) {
-  .accordion{
-    font-size: 10px;
-  }
-  .accordion-header {
-    height: 100px;
-    line-height: 20px;
-  }
-  .accordian-button {
-    font-size: 10px;
-  }
-}
+
   .accordion-item {
     background-color: #121212;
   }
@@ -76,4 +53,41 @@
 }
 .accordion-button:focus {
   box-shadow: #1ed760 !important;
+}
+
+/* style for phones */
+@media screen and (max-width: 600px) {
+  .accordion-button {
+    padding: 0.5em 0.5em;
+  }
+  .accordion-body {
+    padding: 0.5em 0.5em;
+  }
+  .accordion-header {
+    padding: 0.5em 0.5em;
+  }
+
+  /* hide col-4  */
+  .col-3, .text-muted, .text-secondary{
+    display: none;
+  }
+
+  .col-1 {
+    padding-left: 0;
+    margin-right: 0.5em;
+  }
+  .col-1 > img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .col-4{
+    font-size: small;
+    /* dont wrap the text */
+    white-space: nowrap;
+  }
+
+  .card-body {
+    font-size: small;
+  }
+  
 }

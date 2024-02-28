@@ -60,12 +60,31 @@
 .mobile-text {
     display: none;
 }
-
-@media screen and (max-width: 750px) {
-    .img-style-education {
+.row_2 {
+    display: block;
+}
+.row_3 {
+    display: none;
+}
+.about-university {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+    .about-text > h3 {
         display: none;
     }
-    .mobile-text {
+    .row_2 {
+        display: none;
+    }
+    .row_3 {
         display: block;
+    }
+    .about-me-section, .text-white, .row {
+        font-size: small;
+    }
+    .img-style-education {
+        display: none;
     }
 }
