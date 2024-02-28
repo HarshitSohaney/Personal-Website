@@ -1,9 +1,10 @@
 $(document).ready(function() {
+  // stick navbar to the top when we reach the element on scroll, make it smooth
+    var searchElementPosition = $('#search').offset().top;
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 341) {
+      if ($(window).scrollTop() > searchElementPosition) {
         $('#navbar').addClass('navbar-fixed');
-      }
-      if ($(window).scrollTop() < 340) {
+      } else {
         $('#navbar').removeClass('navbar-fixed');
       }
     });
