@@ -56,22 +56,18 @@
 }
 
 /* style for phones */
-@media screen and (max-width: 600px) {
-  .accordion-button {
-    padding: 0.5em 0.5em;
+@media screen and (max-width: 950px) {
+  .accordion {
+    padding: 0.8em;
   }
-  .accordion-body {
-    padding: 0.5em 0.5em;
-  }
-  .accordion-header {
-    padding: 0.5em 0.5em;
-  }
-
   /* hide col-4  */
   .col-3, .text-muted, .text-secondary{
     display: none;
   }
-
+  .col-4{
+    /* dont wrap the text */
+    white-space: nowrap;
+  }
   .col-1 {
     padding-left: 0;
     margin-right: 0.5em;
@@ -80,6 +76,9 @@
     width: 1.5em;
     height: 1.5em;
   }
+}
+
+@media screen and (max-width: 600px) {
   .col-4{
     font-size: small;
     /* dont wrap the text */
@@ -89,5 +88,4 @@
   .card-body {
     font-size: small;
   }
-  
 }

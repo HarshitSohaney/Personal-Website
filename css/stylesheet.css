@@ -103,7 +103,7 @@ body {
   padding: 2em;
   display: flex;
   flex-direction: row;
-  width: 17%;
+  width: 20%;
   justify-content: space-between;
   align-items: center;
 }
@@ -169,7 +169,7 @@ h4 {
  /* style for 775px */
 @media screen and (max-width: 950px){
   .play-page-section {
-    width: 50%;
+    width: 35%;
   }
   .sidebar {
     width: 25%;
