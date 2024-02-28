@@ -1,6 +1,11 @@
 .skills-section {
     background-color: #121212;
     padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.skills-section h4 {
+    padding: 20px;
 }
 .card{
     box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
@@ -19,7 +24,7 @@
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     scrollbar-color: #3d3d3d #121212;
-    height: 300px;
+    height: 310px;
 }
 #skills  > .container > .row > * {
     width: auto;

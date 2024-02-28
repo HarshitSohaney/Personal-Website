@@ -77,7 +77,7 @@ function startScroll(){
         $(this).attr("src","icons/pause-button.png")
     });
     let id = setInterval(function() {
-        setInterval(window.scrollBy(0,10),150);
+        setInterval(window.scrollBy(0,10),20);
         if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { 
             stopScroll();
         }
