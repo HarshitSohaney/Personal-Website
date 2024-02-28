@@ -96,6 +96,7 @@
   font-weight: 600;
   font-family: montserrat;
 }
+
 @media screen and (max-width: 950px) {
   .float-end, .float-start {
     align-items: center;
@@ -136,9 +137,14 @@
     padding: 5px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .footer-info, .footer-right {
     display: none;
+  }
+  .float-end, .float-start {
+    align-items: baseline;
+    display: flex;
   }
   .footer{
     grid-template-areas:
