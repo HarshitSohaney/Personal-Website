@@ -32,16 +32,18 @@
 .container-box {
     display: flex;
     justify-content: center;
+} 
+
+.skills-section > .container {
+    display: flex;
+    /* keep everything to the left */
+    justify-content: flex-start;
+    margin-left: 10px;
 }
 
-@media screen and (max-width: 800px) {
-    .card{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 1600px) {
-    .skills-section .container{
-        align-items: left;
+@media screen and (max-width: 950px) {
+    .skills-section > .container {
+        margin-left: 0;
     }
 }
 

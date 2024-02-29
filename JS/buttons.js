@@ -29,11 +29,11 @@ function isInViewport(el) {
 
 var sectionArray = new Array(
     'hero',
-    'skills',
     'experience',
     'projects',
-    'about',
-    'spotify'
+    'skills',
+    'about'
+    // 'spotify'
 )
 
 var prevButton = document.getElementById('previous-button');
@@ -113,12 +113,10 @@ $(window).on('scroll', function() {
   });
 
 // For the shuffle button
-let shuffleButton = document.getElementsByClassName('shuffle-button');
+let shuffleButton = document.getElementById('shuffle-button');
 
-Array.from(shuffleButton).forEach(element => {
-    element.onclick = function() {
-        // go to a random section
-        let randomNum = Math.floor(Math.random() * sectionArray.length);
-        document.getElementById(sectionArray[randomNum]).scrollIntoView({behavior: 'auto'});
-    }
-});
+shuffleButton.onclick = function() {
+    // go to a random section
+    let randomNum = Math.floor(Math.random() * sectionArray.length);
+    document.getElementById(sectionArray[randomNum]).scrollIntoView({behavior: 'auto'});
+}
