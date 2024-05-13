@@ -51,7 +51,6 @@ nextButton.onclick =  function () {
 };
 
 function checkView() {
-    
     for(let i = 0; i < sectionArray.length; i++) {
         const box = document.getElementById(sectionArray[i]);
 
@@ -63,26 +62,25 @@ function checkView() {
             
         }
     }
-    
 };
 
 // For auto scroll
-
 let scrollerID;
 let paused = true;
-let interval = 40;
+let interval = 10;
 
-function startScroll(){
+function startScroll(element){
     $('.play-button').each(function() {
         $(this).attr("src","icons/pause-button.png")
     });
-    let id = setInterval(function() {
-        setInterval(window.scrollBy(0,10),20);
-        if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { 
-            stopScroll();
-        }
+    var contentHeight = element.scrollHeight - element.clientHeight;
+    scrollerID = setInterval(function() {
+            element.scrollTop += 1; // Adjust the scroll speed as needed
+            if (element.scrollTop >= contentHeight) {
+                // Stop scrolling at the end of the content
+                stopScroll();
+            }
     }, interval);
-    return id;
 }
 
 function stopScroll() {
@@ -93,24 +91,23 @@ function stopScroll() {
 }
 
 let playButtons = document.getElementsByClassName('play-button');
-
 Array.from(playButtons).forEach(element => {
-    element.onclick = function() {
-        if(paused) {
-            scrollerID = startScroll();
-            paused = false;
-        } else {
-            stopScroll();
-            paused = true;
-        }
+        element.addEventListener('click', function() {
+            autoScroll(document.getElementsByClassName('main-content')[0]);
+        });
     }
-});
+);
 
-$(window).on('scroll', function() {
-    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { 
+function autoScroll(element) {
+    // If the element is already scrolling, stop it
+    if (paused) {
+        startScroll(element);
+        paused = false;
+    } else {
         stopScroll();
+        paused = true;
     }
-  });
+}
 
 // For the shuffle button
 let shuffleButton = document.getElementById('shuffle-button');
@@ -118,5 +115,6 @@ let shuffleButton = document.getElementById('shuffle-button');
 shuffleButton.onclick = function() {
     // go to a random section
     let randomNum = Math.floor(Math.random() * sectionArray.length);
-    document.getElementById(sectionArray[randomNum]).scrollIntoView({behavior: 'auto'});
+    // smooth scroll to the section
+    document.getElementById(sectionArray[randomNum]).scrollIntoView({behavior: 'smooth'});
 }

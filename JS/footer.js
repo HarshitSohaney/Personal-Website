@@ -1,9 +1,10 @@
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+let mainContent = document.querySelector('.main-content');
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-} 
+mainContent.onscroll = function() {
+  // get the scroll percentage of main-content
+  winScroll = mainContent.scrollTop;
+  height = mainContent.scrollHeight - mainContent.clientHeight;
+  scrollPercentage = winScroll / height;
+  document.getElementById("myBar").style.width = scrollPercentage*100 + "%";
+}

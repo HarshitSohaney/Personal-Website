@@ -7,6 +7,7 @@
     width: 100%;
     font-weight: 400;
   }
+
 .footer {
   display: grid; 
   grid-template-columns: 0.7fr 1.7fr 0.6fr; 
@@ -39,7 +40,8 @@
 /* The progress container (grey background) */
 .progress-container {
     width: 70%;
-    height: 2px;
+    height: 3px;
+    border-radius: 6px;
     margin: auto;
     background: #ccc;
     padding: 0;
@@ -50,7 +52,8 @@
   
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 2px;
+  height: 100%;
+  border-radius: 6px;
   background: #1ed760;
   width: 0%;
 }

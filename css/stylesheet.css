@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@100;400;600;800&display=swap');
-
+:root {
+  overflow: auto;
+  scrollbar-color: #3a3a3a transparent;
+  scrollbar-width: thin;
+}
 body {
   background-color: #000000;
 }
 .container-grid {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size:20px;
   scroll-behavior: smooth;
   display: flex;
   justify-content: flex-end;
 }
 .content {
-  background-color: #121212;
+  background: rgb(59,99,148);
+  background: linear-gradient(180deg, #173c6a 0%, #121212 5%); 
 }
 .sidebar {
   height: 100%;
@@ -56,18 +61,6 @@ body {
   text-align: center;
   padding: 40px;
 }
-/* Style the navbar */
-#navbar {
-  z-index: 1;
-  width: 100%;
-  background-color: #383838;
-  height: 50px;
-}
-
-.navbar-fixed {
-  top: 0;
-  position: fixed;
-}
 
 /* Side nav */
 .sidenav {
@@ -90,13 +83,6 @@ body {
 
 .sidenav a:hover {
   color: #f1f1f1;
-}
-
-.main {
- /* margin-left: 160px;  Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-  z-index: 0;
 }
 
 .play-page-section {
@@ -124,6 +110,7 @@ h4 {
   font-size: 20px;
   color: white;
 }
+
 .Navbar {
   display: grid; 
   padding: 10px;
@@ -153,10 +140,16 @@ h4 {
   margin: inherit;
  }
 .Nav { grid-area: Nav; }
+
 .main-content { 
+  position: absolute;
+  height: 90%;
   width: 85%;
+  overflow: auto;
   background-color: #000000;
-  padding: 10px 0;
+  top: 10px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
  }
 
  nav {
@@ -176,6 +169,7 @@ h4 {
   }
   .main-content {
     width: 75%;
+    height: 100%;
   }
 }
 
