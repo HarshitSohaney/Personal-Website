@@ -1,4 +1,5 @@
 let navbar = document.querySelector('#search'); 
+let mainContent = document.querySelector('.main-content');
 const oldNavbarTop = navbar.offsetTop;
 
 mainContent.onscroll = function() {
