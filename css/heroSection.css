@@ -5,9 +5,10 @@
   position: relative;
   overflow: hidden;
   display: flex;
+  align-content: end;
 }
 .hero-text {
-  align-content: end;
+  margin-top: auto;
   padding-left: 2em;
   padding-bottom: 1em;
 }

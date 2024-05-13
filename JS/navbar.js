@@ -23,4 +23,10 @@ mainContent.onscroll = function() {
             searchChild[i].style.display = 'none';
         }
     }
+
+    // get the scroll percentage of main-content
+    winScroll = mainContent.scrollTop;
+    height = mainContent.scrollHeight - mainContent.clientHeight;
+    scrollPercentage = winScroll / height;
+    document.getElementById("myBar").style.width = scrollPercentage*100 + "%";
 }
