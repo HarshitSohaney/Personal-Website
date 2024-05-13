@@ -58,6 +58,10 @@
   background-color: #343232;
     color: white;
 }
+.album-cover {
+  scale: 90%;
+  border-radius: 6px;
+}
 .audio-buttons {
   margin-top: 7px;
 }
