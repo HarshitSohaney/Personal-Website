@@ -101,11 +101,9 @@ Array.from(playButtons).forEach(element => {
 function autoScroll(element) {
     // If the element is already scrolling, stop it
     if (paused) {
-        console.log('start');
         startScroll(element);
         paused = false;
     } else {
-        console.log('stop');
         stopScroll();
         paused = true;
     }
@@ -117,5 +115,6 @@ let shuffleButton = document.getElementById('shuffle-button');
 shuffleButton.onclick = function() {
     // go to a random section
     let randomNum = Math.floor(Math.random() * sectionArray.length);
-    document.getElementById(sectionArray[randomNum]).scrollIntoView({behavior: 'auto'});
+    // smooth scroll to the section
+    document.getElementById(sectionArray[randomNum]).scrollIntoView({behavior: 'smooth'});
 }
