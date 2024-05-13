@@ -1,23 +1,14 @@
-let searchElement = document.getElementById('search');
+let navbar = document.querySelector('#search'); 
+const oldNavbarTop = navbar.offsetTop;
 
-searchElement.addEventListener('keypress', function(e) {
-    if (e.keyCode === 13) {
-        let searchValue = searchElement.value;
-        return find(searchValue, false, false, false, false, true);
-}
-});
-
-let mainContent = document.querySelector('.main-content');
-mainContent.addEventListener('scroll', function() {
-    let navbar = document.querySelector('#search');
-  
+mainContent.onscroll = function() {
     // add the class navbar-fixed and topbar-display to navbar when we reach #search on scroll
     if (mainContent.scrollTop >= navbar.offsetTop) {
         navbar.classList.add('navbar-fixed');
         navbar.classList.add('topbar-display');
     }
-    else {
+    if (mainContent.scrollTop < oldNavbarTop) {
         navbar.classList.remove('navbar-fixed');
         navbar.classList.remove('topbar-display');
     }
-  });
+}
