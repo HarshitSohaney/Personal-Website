@@ -1,6 +1,6 @@
 # Personal Website
 
-![](Pictures/personalwebsite.PNG)
+<img width="1327" alt="image" src="https://github.com/HarshitSohaney/Personal-Website/assets/73911621/2df3898d-4769-4542-84d4-4bd84a6daf4a">
 
 ## The website has been deployed on https://www.harshitsohaney.com
 ### The wiki contains updates on the progress I've made on creating this webpage
