@@ -19,6 +19,10 @@
     height: 100%;
 }
 
+#skills > .container {
+    margin-right: 0;
+    max-width: 100%;
+}
 #skills > .container > .row {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -27,7 +31,7 @@
     height: 310px;
 }
 #skills  > .container > .row > * {
-    width: auto;
+    width: 100%;
 }
 .container-box {
     display: flex;
