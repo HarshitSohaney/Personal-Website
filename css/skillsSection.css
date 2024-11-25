@@ -1,78 +1,126 @@
 .skills-section {
-    background-color: #121212;
-    padding: 20px;
-    padding-right: 0;
-    padding-left: 0;
+  background-color: #121212;
+  padding: 20px;
+  padding-right: 0;
+  padding-left: 0;
 }
 .skills-section h4 {
-    padding: 20px;
+  padding: 20px;
 }
-.card{
-    box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
-    padding: 10px;
-    background-color: #1d1d1d;
-    color:#fff;
-    width: auto;
-    transition: 0.4s;
-    border-radius: 12px;
-    width: 210px;
-    height: 100%;
+
+.card {
+  box-shadow: 0 0 5px 0 rgba(22, 22, 26, 0.25);
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  width: auto;
+  transition: 0.1;
+  border-radius: 12px;
+  width: 210px;
+  height: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.filter-badges {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+}
+
+.filter-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #282828;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+.filter-badge:hover {
+    background-color: #404040;
+    color: #ffffff;
+}
+.filter-badge.active {
+    background-color: #1db954;
+    color: #ffffff;
+}
+.skill-card {
+    transition: opacity 0.3s ease;
+}
+.skill-card.hidden {
+    display: none;
 }
 
 #skills > .container {
-    margin-right: 0;
-    max-width: 100%;
+  margin-right: 0;
+  max-width: 100%;
 }
 #skills > .container > .row {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-color: #3d3d3d #121212;
-    height: 310px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: #3d3d3d #121212;
+  height: 310px;
 }
-#skills  > .container > .row > * {
-    width: 100%;
+
+#skills > .container > .row > * {
+  width: 100%;
 }
 .container-box {
-    display: flex;
-    justify-content: center;
-} 
+  display: flex;
+  justify-content: center;
+}
 
 .skills-section > .container {
-    display: flex;
-    /* keep everything to the left */
-    justify-content: flex-start;
-    margin-left: 10px;
+  display: flex;
+  /* keep everything to the left */
+  justify-content: flex-start;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 950px) {
-    .skills-section > .container {
-        margin-left: 0;
+  .skills-section > .container {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .filter-badges {
+        display: none;
     }
+  }
+
+.card:hover {
+  background-color: #202020;
 }
 
-
-.card:hover{
-    background-color: #3d3d3d;
-}
 h5 {
-    font-size: 20px;
+  font-size: 20px;
 }
 .card-body p {
-    font-size: 15px;
-    text-decoration-color: grey;
-    font-weight: 400;
+  font-size: 15px;
+  text-decoration-color: grey;
+  font-weight: 400;
 }
 .skill-hover:hover {
-    background-color: #191414;
+  background-color: #191414;
 }
 
 .card-img-top {
-    width: 150px;
-    height: 150px;
-    object-fit:contain;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
 
 .container-box {
-    border-radius: 6px;
+  border-radius: 6px;
 }

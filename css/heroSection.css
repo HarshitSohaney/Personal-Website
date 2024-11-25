@@ -27,12 +27,13 @@
 
 .hero-background-img {
   background-image: url(../Pictures/hero2.jpg);
-  background-size:cover;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  /* background-position: left center; */
   height: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  background-attachment: fixed;
 }
 
 /* About Me 
@@ -107,4 +108,17 @@ color: #20247b;
 }
 .dark-color {
   color: #ffffff;
+}
+
+@media screen and (max-width: 950px) {
+  .hero-background-img {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-background-img {
+    background-image: url(../Pictures/hero2_phone.jpg);
+    background-size: contain;
+  }
 }
