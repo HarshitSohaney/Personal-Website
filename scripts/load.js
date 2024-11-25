@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "GIS Mapping System",
-    image: "Pictures/mapper.png",
+    image: "Pictures/mapper1.png",
     link: "https://github.com/HarshitSohaney/Mapper-65",
     from: new Date("2022-01-01"),
     to: new Date("2022-04-01"),
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     name: "Block Stack Game",
-    image: "Pictures/block.png",
+    image: "Pictures/block1.png",
     link: "https://github.com/HarshitSohaney/Block-Stack",
     from: new Date("2022-01-01"),
     to: new Date("2022-04-30"),
