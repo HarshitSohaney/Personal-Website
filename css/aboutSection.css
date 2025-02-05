@@ -16,24 +16,49 @@
     background-color: rgb(64, 64, 64);
 }
 .aboutSection {
-    background-image: url('../Pictures/aboutImg.jpg');
+    background-image: url('../Pictures/aboutImg3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 400px;
+    min-height: 500px;
     max-width: 800px;
     text-align: left;
     padding: 10px 10px;
     border-radius: 6px;
     transition: 0.4s;
     background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    transition: 0.2s;
+    filter: blur(0px);
+}
+
+.aboutSection > * {
+    position: relative;
 }
 
 .aboutSection:hover {
-    min-height: 420px;
+    min-height: 520px;
     max-width: 820px;
 }
 
-.text-alignment h5{
+.aboutSection:hover::before {
+    filter: blur(1.5px);
+}
+
+.text-alignment h5{    
     font-weight: 600;
     font-size: smaller;
 }
