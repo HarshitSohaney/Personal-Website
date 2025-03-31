@@ -73,7 +73,7 @@
 }
 
 #skills > .container > .row > * {
-  width: 100%;
+  width: auto;
 }
 .container-box {
   display: flex;

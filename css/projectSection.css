@@ -24,6 +24,10 @@
   table-layout: fixed;
 }
 
+.projects-container-music {
+  width: 50%;
+}
+
 @media screen and (max-width: 950px) {
   .table-mobile {
     display: table;
@@ -36,6 +40,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .projects-container-music {
+    width: 100%;
   }
 }
 
