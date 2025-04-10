@@ -1,11 +1,9 @@
 .skills-section {
   background-color: #121212;
-  padding: 20px;
-  padding-right: 0;
-  padding-left: 0;
 }
+
 .skills-section h4 {
-  padding: 20px;
+  padding: 40px;
 }
 
 .card {
@@ -61,9 +59,11 @@
 }
 
 #skills > .container {
-  margin-right: 0;
+  margin: 0 auto;
   max-width: 100%;
+  padding-left: 0 !important;
 }
+
 #skills > .container > .row {
   flex-wrap: nowrap;
   overflow-x: scroll;

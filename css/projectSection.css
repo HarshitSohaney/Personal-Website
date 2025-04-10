@@ -24,8 +24,16 @@
   table-layout: fixed;
 }
 
-.projects-container-music {
-  width: 50%;
+.music-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.music-item {
+  flex: 1 1 calc(50% - 10px);
+  min-width: 300px;
+  max-width: 525px;
 }
 
 @media screen and (max-width: 950px) {
