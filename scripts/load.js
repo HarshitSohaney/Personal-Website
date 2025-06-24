@@ -123,6 +123,15 @@ function loadProjects() {
 
 const experiences = [
   {
+    logo: "Pictures/chalky_temp.png",
+    position: "Founding Engineer",
+    company: "Chalky AI",
+    duration: "June, 2025 - Present",
+    details: [
+      "Building a homeschooling application to improve reading comprehension for children",
+    ]
+  },
+  {
     logo: "Pictures/ff_logo.png",
     position: "Software Engineering Intern",
     company: "Mozilla Corp.",
@@ -199,39 +208,39 @@ const experiences = [
       },
     ],
   },
-  {
-    logo: "Pictures/UOFTAI.jpg",
-    position: "Curriculum Content Lead",
-    company: "UofT AI",
-    duration: "June, 2022 - Dec, 2022",
-    details: [
-      "Lead a team of ten to design the curriculum for an introductory AI program (Learn AI) at UofT AI",
-      "Introduced new lectures targetting real world applications of AI and the philosophy of AI for the future",
-    ],
-    links: [
-      {
-        text: "Link to Curriculum 2022-2023",
-        url: "https://www.uoft.ai/_files/ugd/8f6d2f_62f7cf1a0e0c44859bd0a111282714ed.pdf",
-      },
-    ],
-  },
-  {
-    logo: "Pictures/ICUBE.jpg",
-    position: "Co-creator",
-    company: "Air-Recharging",
-    duration: "Mar, 2021 - Nov, 2021",
-    details: [
-      "Researched on a new rechargeable battery that makes use of the Earth's magnetic field to self-charge",
-      "Accepted into the ICUBE LEAP Startup League to improve our business model and move further with the venture",
-      "Obtained the second place prize at the ENACTUS UofT Innovation Pitch Competition",
-    ],
-    links: [
-      {
-        text: "Link to Curriculum 2022-2023",
-        url: "https://www.uoft.ai/_files/ugd/8f6d2f_62f7cf1a0e0c44859bd0a111282714ed.pdf",
-      },
-    ],
-  },
+  // {
+  //   logo: "Pictures/UOFTAI.jpg",
+  //   position: "Curriculum Content Lead",
+  //   company: "UofT AI",
+  //   duration: "June, 2022 - Dec, 2022",
+  //   details: [
+  //     "Lead a team of ten to design the curriculum for an introductory AI program (Learn AI) at UofT AI",
+  //     "Introduced new lectures targetting real world applications of AI and the philosophy of AI for the future",
+  //   ],
+  //   links: [
+  //     {
+  //       text: "Link to Curriculum 2022-2023",
+  //       url: "https://www.uoft.ai/_files/ugd/8f6d2f_62f7cf1a0e0c44859bd0a111282714ed.pdf",
+  //     },
+  //   ],
+  // },
+  // {
+  //   logo: "Pictures/ICUBE.jpg",
+  //   position: "Co-creator",
+  //   company: "Air-Recharging",
+  //   duration: "Mar, 2021 - Nov, 2021",
+  //   details: [
+  //     "Researched on a new rechargeable battery that makes use of the Earth's magnetic field to self-charge",
+  //     "Accepted into the ICUBE LEAP Startup League to improve our business model and move further with the venture",
+  //     "Obtained the second place prize at the ENACTUS UofT Innovation Pitch Competition",
+  //   ],
+  //   links: [
+  //     {
+  //       text: "Link to Curriculum 2022-2023",
+  //       url: "https://www.uoft.ai/_files/ugd/8f6d2f_62f7cf1a0e0c44859bd0a111282714ed.pdf",
+  //     },
+  //   ],
+  // },
 ];
 
 function generateExperienceHTML() {
