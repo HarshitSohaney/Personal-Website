@@ -123,10 +123,19 @@ function loadProjects() {
 
 const experiences = [
   {
+    logo: "Pictures/ff_logo.png",
+    position: "Software Engineer",
+    company: "Mozilla Corp.",
+    duration: "Aug, 2025 - Present",
+    details: [
+      "Desktop Integrations Engineering, building solutions for OS integrations on Firefox Desktop"
+    ],
+  },
+  {
     logo: "Pictures/chalky_temp.png",
     position: "Founding Engineer",
     company: "Chalky AI",
-    duration: "June, 2025 - Present",
+    duration: "June, 2025 - July, 2025",
     details: [
       "Building a homeschooling application to improve reading comprehension for children",
     ]
@@ -182,18 +191,6 @@ const experiences = [
     links: [],
   },
   {
-    logo: "Pictures/UTMD.png",
-    position: "Founder/Co-president",
-    company: "University of Toronto Musical Design",
-    duration: "May, 2023 - Sept, 2024",
-    details: [
-      "Started a design team which builds and designs musical instruments in the University of Toronto",
-      "Leading an executive team of 6 with a total of 30 general members in engineering an Acoustic Electric guitar",
-      "Maintaining relations with the Faculty of Applied Sciences, Faculty of Music, and reaching out to external companies for support",
-    ],
-    links: [],
-  },
-  {
     logo: "Pictures/UOFTAI.jpg",
     position: "ProjectX Director",
     company: "UofT AI",
@@ -207,6 +204,18 @@ const experiences = [
         url: "https://www.uoft.ai/projectx",
       },
     ],
+  },
+  {
+    logo: "Pictures/UTMD.png",
+    position: "Founder/Co-president",
+    company: "University of Toronto Musical Design",
+    duration: "May, 2023 - Sept, 2024",
+    details: [
+      "Started a design team which builds and designs musical instruments in the University of Toronto",
+      "Leading an executive team of 6 with a total of 30 general members in engineering an Acoustic Electric guitar",
+      "Maintaining relations with the Faculty of Applied Sciences, Faculty of Music, and reaching out to external companies for support",
+    ],
+    links: [],
   },
   // {
   //   logo: "Pictures/UOFTAI.jpg",
